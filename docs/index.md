@@ -8,7 +8,7 @@ By providing specific interfaces for each audience perspective, we can ensure th
 
 ## Support
 
-If your codebase uses codebase principles please support the initiative by starring the [Codebase Interface GitHub repository](github.com/codebase-interface/codebaseinterface){target="_blank"} and placing the below markdown in the README of your repo.
+If your codebase uses codebase principles please support the initiative by starring the [Codebase Interface GitHub repository](https://github.com/codebase-interface/codebaseinterface){target="_blank"} and placing the below markdown in the README of your repo.
 
 ### Badges
 

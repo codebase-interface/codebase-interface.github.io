@@ -32,8 +32,9 @@ theme:
         name: Switch to light mode
 
 nav:
-  - Home: index.md
+  - Principles: index.md
   - Benefits: benefits.md
+  - Tooling: tooling.md
 
 
 plugins:

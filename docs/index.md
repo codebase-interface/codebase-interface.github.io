@@ -1,6 +1,4 @@
-# Codebase Interface
-
-## Principles
+# Principles
 
 1. Identify and empathise with all audience perspectives on the codebase - contributors, users, operators, AI agents, Build agents.
 2. Provide specific interfaces for each audience perspective.

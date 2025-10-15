@@ -1,0 +1,21 @@
+# <type>[optional scope]: <description>
+#
+# [optional body]
+#
+# [optional footer(s)]
+
+# Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
+# Example without scope: feat: add new feature
+# Example with scope: feat(parser): add new parsing feature
+# Example Types:
+# feat: add new tutorial for git commands
+# fix: correct typo in linux commands description
+# docs: update README with installation instructions
+# style: reformat code for consistent indentation
+# refactor: restructure tutorial logic for better maintainability
+# perf: improve loading speed of cheat-sheets
+# test: add unit tests for command validation
+# build: update Dockerfile to use latest Go version
+# ci: add GitHub Actions workflow for automated testing
+# chore: update dependencies to latest versions
+# revert: revert "feat: add new tutorial for git commands"

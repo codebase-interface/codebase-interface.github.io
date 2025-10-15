@@ -1,6 +1,6 @@
 # Language
 
-The ubiquitous language used for the the codebase interface can be defined by the terms below.
+This documentation will help you understand the ubiquitous language used in this codebase.
 
 | Term | Definition |
 |-|-|

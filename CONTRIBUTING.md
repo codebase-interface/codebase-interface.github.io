@@ -1,5 +1,7 @@
 # Contributing
 
+This documentation will help you contribute to this codebase.
+
 ## Setup
 
 [Install taskfile](https://taskfile.dev/docs/installation) via your preferred method.

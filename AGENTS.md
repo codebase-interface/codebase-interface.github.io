@@ -1,5 +1,7 @@
 # Codebase Interface
 
+This documentation will help you perform AI assisted tasks in this codebase.
+
 ## Product
 
 The codebase interface is a documented set of principles that aim to promote the ease of use of codebases across languages and frameworks.

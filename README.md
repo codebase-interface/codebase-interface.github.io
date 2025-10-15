@@ -1,2 +1,3 @@
-# codebaseinterface
-The main documentation and website for the principles of the codebase interface
+# Codebase Interface
+
+This documentation will help you understand how to use the service provided by this codebase.

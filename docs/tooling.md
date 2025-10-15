@@ -17,6 +17,10 @@
 - [`.gitattributes`](https://git-scm.com/docs/gitattributes) - A plain text file that tells Git how to handle certain files in a project. It is cross platform and works on Windows, MacOS and Linux. It is also IDE agnostic as it can be used with any text editor or IDE that supports Git.
 - [`.gitmessage`](https://git-scm.com/docs/git-commit#_specifying_the_commit_message) - A plain text file that contains a template for commit messages. It is cross platform and works on Windows, MacOS and Linux. It is also IDE agnostic as it can be used with any text editor or IDE that supports Git.
 
+## Pre-Commits
+
+- [`.pre-commit-config.yaml`](https://pre-commit.com/) - A configuration file for the pre-commit framework, which is a tool for managing and maintaining multi-language pre-commit hooks. It is cross platform and works on Windows, MacOS and Linux. It is also IDE agnostic as it can be used with any text editor or IDE that supports YAML files.
+
 ### Docker
 
 - [`.dockerignore`](https://docs.docker.com/engine/reference/builder/#dockerignore-file) - A plain text file that tells Docker which files and directories to ignore when building an image. It is cross platform and works on Windows, MacOS and Linux. It is also IDE agnostic as it can be used with any text editor or IDE that supports Docker.

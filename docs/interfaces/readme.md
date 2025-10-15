@@ -1,4 +1,4 @@
 # Readme
 
-**Primary Audience**: Users
-**Secondary Audience**: Contributors, Operators
+- **Primary Audience**: Users
+- **Secondary Audience**: Contributors, Operators

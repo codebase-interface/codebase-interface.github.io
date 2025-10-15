@@ -1,4 +1,12 @@
-# Principles
+# Home
+
+Welcome to the codebase interface documentation!
+
+The codebase interface is a set of principles and practices that allow us to identify and understand all perspectives of interacting with a codebase, including contributors, users, operators, AI agents, and build agents.
+
+By providing specific interfaces for each audience perspective, we can ensure that everyone has a clean and maintainable experience when interacting with a codebase.
+
+## Principles
 
 1. Identify and empathise with all audience perspectives on the codebase - contributors, users, operators, AI agents, Build agents.
 2. Provide specific interfaces for each audience perspective.

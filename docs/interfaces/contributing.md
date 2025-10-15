@@ -1,3 +1,3 @@
 # Contributing
 
-**Primary Audience**: Contributors
+- **Primary Audience**: Contributors

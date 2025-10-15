@@ -21,3 +21,9 @@ task --version
 ```bash
 task --list
 ```
+
+## Docs
+
+```bash
+pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin
+```

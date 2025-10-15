@@ -1,7 +1,16 @@
 {
     "cSpell.words": [
         "codebaseinterface",
+        "fontawesome",
+        "inlinehilite",
+        "linenums",
+        "livereload",
+        "mkdocs",
+        "pymdown",
+        "pymdownx",
         "RUNBOOK",
-        "taskfile"
+        "superfences",
+        "taskfile",
+        "vars"
     ]
 }

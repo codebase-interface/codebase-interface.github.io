@@ -11,3 +11,21 @@ tasks:
     cmds:
       - echo "{{.GREETING}}"
     silent: true
+
+  setup: 
+    desc: Set up the development environment
+    cmds:
+      - pip install mkdocs-material
+      - pip install mkdocs-git-revision-date-localized-plugin
+      - pip install pymdown-extensions
+    silent: true
+
+  build:
+    desc: Build the MkDocs site
+    cmds:
+      - mkdocs build --strict
+
+  run:
+    desc: Run codebaseinterface locally
+    cmds:
+      - mkdocs serve --livereload

@@ -18,6 +18,7 @@ The codebase interface is promoting the understanding of the different audiences
 ## Technical Requirements
 
 - Taskfile is used to provide a consistent tooling interface for all audiences of this codebase.
+- Technical agnostic helper files are utilised such as .editorconfig and .gitattributes.
 - An interface is provided for contributors to understand how to contribute to the codebase via the CONTRIBUTING.md file.
 - An interface is provided for users to understand how to use the codebase via the README.md.
 - An interface is provided for operators to understand how to operate the codebase via the RUNBOOK.md file.

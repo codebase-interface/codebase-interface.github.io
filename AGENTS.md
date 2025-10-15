@@ -25,3 +25,5 @@ The codebase interface is promoting the understanding of the different audiences
 - An interface is provided for AI agents to understand how to interact with the codebase via the AGENTS.md file.
 - Markdown linting should be applied to all markdown files.
 - Broken links should be prevented in all markdown files.
+- Conventional commits should be used for all commit messages.
+- A pull request template should be used for all pull requests.

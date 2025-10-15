@@ -6,13 +6,28 @@ The codebase interface is a set of principles and practices that allow us to ide
 
 By providing specific interfaces for each audience perspective, we can ensure that everyone has a clean and maintainable experience when interacting with a codebase.
 
-## Principles
+## Support
 
-1. Identify and empathise with all audience perspectives on the codebase - contributors, users, operators, AI agents, Build agents.
-2. Provide specific interfaces for each audience perspective.
-3. Ensure each audience interface is clean and remains maintainable.
-4. Provide a consistent abstraction over languages and frameworks.
-5. Provide a codebase experience that can be replicated by any audience, anywhere and on any platform.
-6. Do not be constrained by current technology and tools - provoke change to how we would like to interact with codebases over current constraints.
-7. Utilise cross platform and cross IDE tools and technologies to provide the interfaces.
-8. Empathise with your own future self who could become any of the audience perspectives at any time.
+If your codebase uses codebase principles please support the initiative by starring the [Codebase Interface GitHub repository](github.com/codebase-interface/codebaseinterface) and placing the below markdown in your repo.
+
+### Badges
+
+#### Primary
+
+```md
+[![Codebase Interface Principles](https://img.shields.io/badge/Codebase%20Interface-Principles-4b9ce2?style=flat-square&logo=semanticweb&logoColor=white)](https://codebaseinterface.org)
+
+> This repository follows the **Codebase Interface Principles** — for a better experience for everyone who works with it.
+```
+
+#### Simple
+
+```md
+[![Codebase Interface](https://img.shields.io/badge/Codebase_Interface-Principles-blue?style=flat)](https://codebaseinterface.org)
+```
+
+#### Footer
+
+```md
+_Follows the [Codebase Interface Principles](https://codebaseinterface.org)._
+```

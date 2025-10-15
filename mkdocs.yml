@@ -31,12 +31,25 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-# nav:
-#   - Principles: index.md
-#   - Benefits: benefits.md
-#   - Tooling: tooling.md
-#   - Audiences: audiences
-#   - Users: audiences/users.md
+nav:
+  - Welcome: index.md
+  - Principles: principles.md
+  - Audiences:
+      - audiences/contributors.md
+      - audiences/users.md
+      - audiences/operators.md
+      - audiences/ai_agents.md
+      - audiences/build_agents.md
+  - Interfaces:
+      - interfaces/readme.md
+      - interfaces/contributing.md
+      - interfaces/runbook.md
+      - interfaces/agents.md
+      - interfaces/changelog.md
+      - interfaces/language.md
+  - Benefits: benefits.md
+  - Tooling: tooling.md
+  - Examples: examples.md
 
 
 plugins:

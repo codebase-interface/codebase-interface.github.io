@@ -31,10 +31,12 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-nav:
-  - Principles: index.md
-  - Benefits: benefits.md
-  - Tooling: tooling.md
+# nav:
+#   - Principles: index.md
+#   - Benefits: benefits.md
+#   - Tooling: tooling.md
+#   - Audiences: audiences
+#   - Users: audiences/users.md
 
 
 plugins:

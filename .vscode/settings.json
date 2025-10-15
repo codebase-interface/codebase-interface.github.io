@@ -2,7 +2,9 @@
     "cSpell.words": [
         "codebaseinterface",
         "fontawesome",
+        "gitmessage",
         "inlinehilite",
+        "Justfile",
         "linenums",
         "livereload",
         "mkdocs",

@@ -1,4 +1,4 @@
-# Home
+# Welcome
 
 Welcome to the codebase interface documentation!
 

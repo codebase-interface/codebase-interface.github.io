@@ -8,14 +8,14 @@ By providing specific interfaces for each audience perspective, we can ensure th
 
 ## Support
 
-If your codebase uses codebase principles please support the initiative by starring the [Codebase Interface GitHub repository](github.com/codebase-interface/codebaseinterface) and placing the below markdown in the README of your repo.
+If your codebase uses codebase principles please support the initiative by starring the [Codebase Interface GitHub repository](github.com/codebase-interface/codebaseinterface){target="_blank"} and placing the below markdown in the README of your repo.
 
 ### Badges
 
 #### Primary
 
 ```md
-[![Codebase Interface Principles](https://img.shields.io/badge/Codebase%20Interface-Principles-4b9ce2?style=flat-square&logo=semanticweb&logoColor=white)](https://codebaseinterface.org)
+[![Codebase Interface Principles](https://img.shields.io/badge/Codebase%20Interface-Principles-4b9ce2?style=flat-square&logo=semanticweb&logoColor=white)](https://codebaseinterface.org){target="_blank"}
 
 > This repository follows the **Codebase Interface Principles** — for a better experience for everyone who works with it.
 ```
@@ -23,11 +23,11 @@ If your codebase uses codebase principles please support the initiative by starr
 #### Simple
 
 ```md
-[![Codebase Interface](https://img.shields.io/badge/Codebase_Interface-Principles-blue?style=flat)](https://codebaseinterface.org)
+[![Codebase Interface](https://img.shields.io/badge/Codebase_Interface-Principles-blue?style=flat)](https://codebaseinterface.org){target="_blank"}
 ```
 
 #### Footer
 
 ```md
-_Follows the [Codebase Interface Principles](https://codebaseinterface.org)._
+_Follows the [Codebase Interface Principles](https://codebaseinterface.org){target="_blank"}._
 ```

@@ -44,6 +44,7 @@
 
 ### 💼 Other
 
+- Add RUNBOOK link to README _(2025-10-16 18:50:42)_
 - Fix duplicate home link in LANGUAGE.md
 
 Removed duplicate home link from the language section. _(2025-10-16 18:50:00)_
@@ -80,6 +81,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-16 18:50:13)_
 - Update changelog [skip ci] _(2025-10-16 18:49:42)_
 - Update changelog [skip ci] _(2025-10-16 15:24:24)_
 - Update changelog [skip ci] _(2025-10-16 15:22:25)_

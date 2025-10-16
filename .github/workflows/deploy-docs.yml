@@ -29,6 +29,6 @@ jobs:
       #   run: git-cliff -c cliff.toml
 
       - name: Build and Deploy
-        run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force --cname codebaseinterface.org
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

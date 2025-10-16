@@ -22,6 +22,8 @@ Benefits can be broken down per codebase audience type as they have been defined
 
 ## Build Agents
 
+- Build agents can consistently understand which directories to react to.
+
 <!-- markdownlint-disable MD033 -->
 <div class="navigation-buttons" markdown="1" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
 

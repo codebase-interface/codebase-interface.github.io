@@ -41,6 +41,7 @@
 
 ### 💼 Other
 
+- Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 15:15:55)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 15:15:09)_
 - Reorder CNAME copy step in deploy workflow _(2025-10-16 15:06:42)_
 - Add CNAME copy step in deploy workflow
@@ -70,6 +71,8 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-16 15:15:24)_
+- Add description for build agents in benefits.md _(2025-10-16 15:15:55)_
 - Update changelog [skip ci] _(2025-10-16 15:06:53)_
 - Update changelog [skip ci] _(2025-10-16 15:05:06)_
 - Update changelog [skip ci] _(2025-10-16 15:02:26)_

@@ -44,6 +44,9 @@
 
 ### 💼 Other
 
+- Enhance examples in documentation
+
+Added examples for directory interface and open source documentation services. _(2025-10-16 18:59:24)_
 - Fix link formatting in RUNBOOK.md _(2025-10-16 18:57:13)_
 - Update link to open in a new tab
 
@@ -88,6 +91,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-16 18:57:21)_
 - Update changelog [skip ci] _(2025-10-16 18:57:05)_
 - Update changelog [skip ci] _(2025-10-16 18:56:36)_
 - Update changelog [skip ci] _(2025-10-16 18:50:55)_

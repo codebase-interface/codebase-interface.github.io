@@ -1,0 +1,44 @@
+#!/bin/bash
+# filepath: /workspaces/codebaseinterface/.githooks/pre-commit
+
+# Pre-commit hook to generate changelog using git-cliff
+# This ensures the changelog is updated and included in the current commit
+
+set -e
+
+# Check if git-cliff is available
+if ! command -v git-cliff &> /dev/null; then
+    echo "Warning: git-cliff not found. Skipping changelog generation."
+    exit 0
+fi
+
+# Check if cliff.toml exists
+if [ ! -f "cliff.toml" ]; then
+    echo "Warning: cliff.toml not found. Skipping changelog generation."
+    exit 0
+fi
+
+echo "Updating changelog with new entries..."
+
+# Check if CHANGELOG.md exists
+if [ -f "CHANGELOG.md" ]; then
+    # Changelog exists, only add new unreleased entries
+    echo "Existing changelog found. Adding new unreleased entries..."
+    git-cliff --unreleased --prepend CHANGELOG.md
+else
+    # No changelog exists, create it from scratch
+    echo "No existing changelog found. Creating new changelog..."
+    git-cliff --output CHANGELOG.md
+fi
+
+# Check if changelog was modified
+if git diff --quiet CHANGELOG.md; then
+    echo "Changelog is up to date."
+else
+    echo "Changelog updated. Adding to commit..."
+    # Stage the updated changelog
+    git add CHANGELOG.md
+    echo "Changelog has been updated and staged for this commit."
+fi
+
+exit 0

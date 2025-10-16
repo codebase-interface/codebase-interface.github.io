@@ -21,13 +21,6 @@ tasks:
       - echo "Setup complete! Changelog is automatically generated via GitHub Actions."
     silent: true
 
-  setup:hooks:
-    desc: Configure Git to use project hooks directory (optional - changelog now generated via GitHub Actions)
-    cmds:
-      - git config core.hooksPath .githooks
-      - chmod +x .githooks/pre-commit
-      - echo "Git hooks configured! Note: Changelog is now automatically generated via GitHub Actions on push to main."
-
   build:
     desc: Build the MkDocs site
     cmds:

@@ -32,3 +32,4 @@ The codebase interface is promoting the understanding of the different audiences
 - An interface is provided for users to understand how to use the codebase via the README.md.
 - An interface is provided for operators to understand how to operate the codebase via the RUNBOOK.md file.
 - An interface is provided for AI agents to understand how to interact with the codebase via the AGENTS.md file.
+- An interface is provided for contributors to understand what tasks are outstanding via the TODO.md file.

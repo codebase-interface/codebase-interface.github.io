@@ -41,6 +41,7 @@
 
 ### 💼 Other
 
+- Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 13:04:37)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 11:24:28)_
 - Update tooling.md _(2025-10-16 07:54:20)_
 - Added pre-commit hook _(2025-10-15 21:06:33)_
@@ -49,12 +50,14 @@
 
 ### 🚜 Refactor
 
+- Remove optional Git hooks setup task and update examples documentation _(2025-10-16 13:04:37)_
 - Simplify changelog update check logic in GitHub Actions workflow _(2025-10-16 12:16:52)_
 - Remove outdated sections and streamline changelog for clarity _(2025-10-16 12:07:38)_
 - Streamline GitHub Actions workflow for MkDocs deployment _(2025-10-15 19:49:41)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-16 12:17:02)_
 - Fixing link _(2025-10-15 21:15:14)_
 - Correcting link syntax _(2025-10-15 21:13:53)_
 - Updated links open new tab _(2025-10-15 21:12:46)_

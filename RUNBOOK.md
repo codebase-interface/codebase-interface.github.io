@@ -4,7 +4,7 @@ This documentation will help you operate the service provided by this codebase.
 
 ## Live Service
 
-- [codebaseinterface.org](https://codebaseinterface.org/){target="_blank"}
+- [codebaseinterface.org](https://codebaseinterface.org/)
 
 ## Troubleshooting
 

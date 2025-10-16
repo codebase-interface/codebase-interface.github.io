@@ -41,6 +41,7 @@
 
 ### 💼 Other
 
+- Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 13:06:45)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 13:04:37)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 11:24:28)_
 - Update tooling.md _(2025-10-16 07:54:20)_
@@ -57,6 +58,9 @@
 
 ### 📚 Documentation
 
+- Correct wording in support section for clarity _(2025-10-16 13:07:17)_
+- Update changelog [skip ci] _(2025-10-16 13:04:46)_
+- Update examples section to include documentation and source aligned services _(2025-10-16 13:06:45)_
 - Update changelog [skip ci] _(2025-10-16 12:17:02)_
 - Fixing link _(2025-10-15 21:15:14)_
 - Correcting link syntax _(2025-10-15 21:13:53)_

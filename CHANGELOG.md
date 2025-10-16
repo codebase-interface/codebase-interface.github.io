@@ -41,6 +41,7 @@
 
 ### 💼 Other
 
+- Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 15:15:09)_
 - Reorder CNAME copy step in deploy workflow _(2025-10-16 15:06:42)_
 - Add CNAME copy step in deploy workflow
 
@@ -69,11 +70,13 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-16 15:06:53)_
 - Update changelog [skip ci] _(2025-10-16 15:05:06)_
 - Update changelog [skip ci] _(2025-10-16 15:02:26)_
 - Update changelog [skip ci] _(2025-10-16 14:59:20)_
 - Update changelog [skip ci] _(2025-10-16 14:54:03)_
 - Update changelog [skip ci] _(2025-10-16 14:49:10)_
+- Update LANGUAGE.md to include navigation links and terms section _(2025-10-16 15:15:08)_
 - Update changelog [skip ci] _(2025-10-16 14:37:22)_
 - Enhance navigation buttons and responsive design across documentation _(2025-10-16 14:48:58)_
 - Add example for source aligned directory implementation _(2025-10-16 14:37:12)_

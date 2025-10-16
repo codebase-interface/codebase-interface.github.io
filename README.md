@@ -2,9 +2,7 @@
 
 This documentation will help you understand how to use the service provided by this codebase.
 
-test
-
-The codebase interface is a set of principles that aim to promote the ease of use of codebases across languages and frameworks for multiple audiences.
+The codebase interface initiative is a set of principles that aim to promote the ease of use of codebases across languages and frameworks for multiple audiences.
 
 - [Codebase Interface](#codebase-interface)
   - [Badges](#badges)

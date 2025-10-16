@@ -44,6 +44,9 @@
 
 ### 💼 Other
 
+- Fix duplicate home link in LANGUAGE.md
+
+Removed duplicate home link from the language section. _(2025-10-16 18:50:00)_
 - Update LANGUAGE.md _(2025-10-16 18:49:32)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 15:22:18)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 15:18:32)_
@@ -77,6 +80,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-16 18:49:42)_
 - Update changelog [skip ci] _(2025-10-16 15:24:24)_
 - Update changelog [skip ci] _(2025-10-16 15:22:25)_
 - Update changelog [skip ci] _(2025-10-16 15:18:41)_

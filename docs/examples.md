@@ -80,5 +80,29 @@
 
     ```
 
-[← Previous: Tooling](../){ .md-button }
-[Next: Welcome →](../){ .md-button .md-button--primary style="float: right;" }
+<!-- markdownlint-disable MD033 -->
+<div class="navigation-buttons" markdown="1" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
+
+<div markdown="1">
+[← Previous: Tooling](../tooling/){ .md-button }
+</div>
+
+<div markdown="1" style="text-align: right;">
+[Next: Welcome →](../){ .md-button .md-button--primary }
+</div>
+
+</div>
+
+<style>
+@media (max-width: 768px) {
+  .navigation-buttons {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem !important;
+  }
+  .navigation-buttons > div:last-child {
+    text-align: left !important;
+  }
+}
+</style>
+<!-- markdownlint-enable MD033 -->

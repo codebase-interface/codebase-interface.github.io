@@ -41,6 +41,7 @@
 
 ### 💼 Other
 
+- Add CNAME option to mkdocs deployment command _(2025-10-16 14:53:53)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 14:48:58)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 14:34:13)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 14:05:06)_
@@ -62,6 +63,7 @@
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-16 14:49:10)_
 - Update changelog [skip ci] _(2025-10-16 14:37:22)_
 - Enhance navigation buttons and responsive design across documentation _(2025-10-16 14:48:58)_
 - Add example for source aligned directory implementation _(2025-10-16 14:37:12)_

@@ -5,6 +5,7 @@ This documentation will help you understand the ubiquitous language used in this
 | Term | Definition |
 |-|-|
 | Codebase interface | The codebase interface is the particular layer around a codebase that an audience will interact with to fulfil their needs. |
+| Service | The service is the functionality provided by the codebase. |
 | Audience | An audience is a person or group of people that have a perspective from which they need to interact with a codebase. |
 | Perspective | A perspective is the particular way an audience views a codebase. |
 | User | A user is an audience that has a need to interact with a codebase in order to use the eventual service it provides. |

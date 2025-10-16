@@ -22,15 +22,27 @@ echo "Updating changelog with new entries..."
 
 # Check if CHANGELOG.md exists
 if [ -f "CHANGELOG.md" ]; then
-    # Changelog exists, only add new unreleased entries
-    echo "Existing changelog found. Adding new unreleased entries..."
-    # Generate unreleased entries and prepend to existing changelog
-    git-cliff --unreleased --output /tmp/new_entries.md
-    if [ -s /tmp/new_entries.md ]; then
-        # If there are new entries, prepend them to existing changelog
-        cat /tmp/new_entries.md CHANGELOG.md > /tmp/updated_changelog.md
-        mv /tmp/updated_changelog.md CHANGELOG.md
-        rm -f /tmp/new_entries.md
+    # Changelog exists, check if there are unreleased commits to add
+    echo "Existing changelog found. Checking for new unreleased entries..."
+    
+    # Check if there are any unreleased commits
+    if git log --oneline $(git describe --tags --abbrev=0 2>/dev/null || echo "HEAD~999")..HEAD --quiet 2>/dev/null; then
+        echo "New commits found. Regenerating full changelog..."
+        # Backup existing changelog
+        cp CHANGELOG.md CHANGELOG.md.backup
+        
+        # Generate complete changelog (this handles unreleased + existing properly)
+        git-cliff --output CHANGELOG.md
+        
+        # If generation fails, restore backup
+        if [ $? -ne 0 ]; then
+            mv CHANGELOG.md.backup CHANGELOG.md
+            echo "Failed to generate changelog, restored backup"
+        else
+            rm -f CHANGELOG.md.backup
+        fi
+    else
+        echo "No new commits to add to changelog."
     fi
 else
     # No changelog exists, create it from scratch

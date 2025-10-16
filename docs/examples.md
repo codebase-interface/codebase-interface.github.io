@@ -35,6 +35,9 @@
 
 ## Source Aligned Services
 
+??? example "Directory Interface Example"
+    Here's a source aligned directory implementation:
+
     ```txt
     ├── AGENTS.md                   # Documentation for AI agents that interact with this codebase
     ├── CHANGELOG.md                # Documentation of notable changes

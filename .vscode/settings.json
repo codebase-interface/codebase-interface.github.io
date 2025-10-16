@@ -11,8 +11,10 @@
         "pymdown",
         "pymdownx",
         "RUNBOOK",
+        "striptags",
         "superfences",
         "taskfile",
+        "topo",
         "vars"
     ]
 }

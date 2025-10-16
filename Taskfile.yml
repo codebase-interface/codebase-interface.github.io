@@ -29,3 +29,26 @@ tasks:
     desc: Run codebaseinterface locally
     cmds:
       - mkdocs serve --livereload
+
+  changelog:
+    desc: Generate changelog using git-cliff
+    cmds:
+      - git cliff --output CHANGELOG.md
+
+  changelog:unreleased:
+    desc: Generate changelog for unreleased changes
+    cmds:
+      - git cliff --unreleased --output CHANGELOG.md
+
+  changelog:update:
+    desc: Update changelog with new commits since last tag
+    cmds:
+      - git cliff --latest --output CHANGELOG.md --prepend
+
+  changelog:setup-hook:
+    desc: Setup git hook to automatically update changelog on commit
+    cmds:
+      - echo '#!/bin/bash' > .git/hooks/post-commit
+      - echo 'git cliff --output CHANGELOG.md' >> .git/hooks/post-commit
+      - chmod +x .git/hooks/post-commit
+      - echo "Git hook installed! Changelog will update automatically on each commit."

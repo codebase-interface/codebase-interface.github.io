@@ -44,6 +44,9 @@
 
 ### 💼 Other
 
+- Update link to open in a new tab
+
+Add target attribute to codebase interface link _(2025-10-16 18:56:58)_
 - Enhance RUNBOOK with troubleshooting details
 
 Added troubleshooting section with checklist for GitHub Pages setup. _(2025-10-16 18:56:23)_
@@ -84,6 +87,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-16 18:56:36)_
 - Update changelog [skip ci] _(2025-10-16 18:50:55)_
 - Update changelog [skip ci] _(2025-10-16 18:50:13)_
 - Update changelog [skip ci] _(2025-10-16 18:49:42)_

@@ -33,17 +33,10 @@ The codebase interface is a set of principles that aim to promote the ease of us
 To set up the development environment and enable automatic changelog generation:
 
 ```bash
-# Install dependencies and configure hooks
+# Install dependencies
 task setup
-
-# Or manually configure hooks
-task setup:hooks
 ```
 
-This will:
+This will install required dependencies (MkDocs, plugins) for local development.
 
-- Install required dependencies (MkDocs, plugins)
-- Configure Git to use project hooks for automatic changelog generation
-- Enable pre-commit hook that updates CHANGELOG.md automatically
-
-**Note**: The pre-commit hook automatically generates changelog entries from your conventional commits, so make sure to follow the [Conventional Commits](https://conventionalcommits.org) specification.
+**Note**: The changelog is automatically generated via GitHub Actions when commits are pushed to main. Make sure to follow the [Conventional Commits](https://conventionalcommits.org) specification for proper changelog generation.

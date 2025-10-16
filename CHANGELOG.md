@@ -32,6 +32,7 @@
 
 ### 🐛 Bug Fixes
 
+- Update timestamp format in changelog generation for consistency _(2025-10-16 12:10:15)_
 - Reorder links in README for better clarity and navigation _(2025-10-16 11:44:58)_
 - Clarify instructions for supporting codebase principles in documentation _(2025-10-15 20:44:41)_
 - Update upload-pages-artifact action to v3 in deploy-docs.yml _(2025-10-15 17:17:21)_

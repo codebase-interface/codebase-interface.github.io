@@ -1,8 +1,9 @@
 # Language
 
+[🏠 Home](README.md)
+
 This documentation will help you understand the ubiquitous language used in this codebase.
 
-- [🏠 Home](README.md)
 - [Language](#language)
   - [Terms](#terms)
 

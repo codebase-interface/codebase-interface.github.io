@@ -28,6 +28,9 @@ jobs:
       # - name: Generate changelog
       #   run: git-cliff -c cliff.toml
 
+      - name: Copy CNAME
+        run: cp CNAME site/
+
       - name: Build and Deploy
         run: mkdocs gh-deploy --force
         env:

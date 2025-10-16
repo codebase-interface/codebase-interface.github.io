@@ -23,6 +23,7 @@ The codebase interface initiative is a set of principles that aim to promote the
 | [CONTRIBUTING](CONTRIBUTING.md) | Guidelines for contributing to this service. |
 | [LANGUAGE](LANGUAGE.md) | Ubiquitous language used for this codebase and service. |
 | [DOCS](docs/README.md) | Extended and online documentation for this service. |
+| [RUNBOOK](RUNBOOK.md) | How to support this service in production. |
 | [SUPPORT](SUPPORT.md) | Contact support for this service. |
 | [CHANGELOG](CHANGELOG.md) | A log of all notable changes made to this service. |
 | [TODO](TODO.md) | Outstanding tasks and ideas for this service. |

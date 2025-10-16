@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to the codebase interface documentation!
+Welcome to the codebase interface initiative!
 
 The codebase interface is a set of principles and practices that allow us to identify and understand all perspectives of interacting with a codebase, including contributors, users, operators, AI agents, and build agents.
 

@@ -26,23 +26,18 @@ jobs:
       - name: Check for changes since last changelog update
         id: check_changes
         run: |
-          # Get the last commit that modified CHANGELOG.md
-          LAST_CHANGELOG_COMMIT=$(git log -1 --format="%H" -- CHANGELOG.md 2>/dev/null || echo "")
-          
-          if [ -z "$LAST_CHANGELOG_COMMIT" ]; then
-            echo "No previous changelog found, generating full changelog"
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-          else
-            # Check if there are commits since the last changelog update
-            COMMITS_SINCE=$(git rev-list --count ${LAST_CHANGELOG_COMMIT}..HEAD)
-            if [ "$COMMITS_SINCE" -gt 1 ]; then
-              echo "Found $COMMITS_SINCE commits since last changelog update"
-              echo "has_changes=true" >> $GITHUB_OUTPUT
-            else
-              echo "No new commits to add to changelog"
-              echo "has_changes=false" >> $GITHUB_OUTPUT
-            fi
+          # Check if this commit is a changelog update commit
+          CURRENT_COMMIT_MSG=$(git log -1 --format="%s")
+          if [[ "$CURRENT_COMMIT_MSG" == *"docs: update changelog"* ]]; then
+            echo "Current commit is a changelog update, skipping"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            exit 0
           fi
+          
+          # Always generate changelog for non-changelog commits
+          # This ensures we capture all changes and git-cliff will handle duplicates
+          echo "Non-changelog commit detected, generating changelog"
+          echo "has_changes=true" >> $GITHUB_OUTPUT
 
       - name: Generate changelog
         if: steps.check_changes.outputs.has_changes == 'true'

@@ -23,6 +23,7 @@
 - Add CHANGELOG and enhance README with documentation navigation _(2025-10-16)_
 - Add commit message validation script for Conventional Commits _(2025-10-16)_
 - Enhance changelog generation and update Taskfile with new tasks _(2025-10-16)_
+- Enhance changelog generation and update Taskfile with new hooks and tasks _(2025-10-16)_
 
 ### 🐛 Bug Fixes
 

@@ -41,6 +41,9 @@
 
 ### 💼 Other
 
+- Add CNAME copy step in deploy workflow
+
+Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 - Update README.md _(2025-10-16 15:02:18)_
 - Fixing CNAME so will persist to github pages _(2025-10-16 14:59:09)_
 - Add CNAME option to mkdocs deployment command _(2025-10-16 14:53:53)_
@@ -65,6 +68,7 @@
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-16 15:02:26)_
 - Update changelog [skip ci] _(2025-10-16 14:59:20)_
 - Update changelog [skip ci] _(2025-10-16 14:54:03)_
 - Update changelog [skip ci] _(2025-10-16 14:49:10)_

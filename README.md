@@ -7,6 +7,7 @@ The codebase interface is a set of principles that aim to promote the ease of us
 - [Codebase Interface](#codebase-interface)
   - [Badges](#badges)
   - [Docs Navigation](#docs-navigation)
+  - [Quick Start for Contributors](#quick-start-for-contributors)
 
 ## Badges
 
@@ -26,3 +27,23 @@ The codebase interface is a set of principles that aim to promote the ease of us
 | [CHANGELOG](CHANGELOG.md) | A log of all notable changes made to this service. |
 | [TODO](TODO.md) | Outstanding tasks and ideas for this service. |
 | [AGENTS](AGENTS.md) | AI agent based documentation to support with AI assisted tasks. |
+
+## Quick Start for Contributors
+
+To set up the development environment and enable automatic changelog generation:
+
+```bash
+# Install dependencies and configure hooks
+task setup
+
+# Or manually configure hooks
+task setup:hooks
+```
+
+This will:
+
+- Install required dependencies (MkDocs, plugins)
+- Configure Git to use project hooks for automatic changelog generation
+- Enable pre-commit hook that updates CHANGELOG.md automatically
+
+**Note**: The pre-commit hook automatically generates changelog entries from your conventional commits, so make sure to follow the [Conventional Commits](https://conventionalcommits.org) specification.

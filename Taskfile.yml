@@ -18,7 +18,15 @@ tasks:
       - pip install mkdocs-material
       - pip install mkdocs-git-revision-date-localized-plugin
       - pip install pymdown-extensions
+      - task: setup:hooks
     silent: true
+
+  setup:hooks:
+    desc: Configure Git to use project hooks directory
+    cmds:
+      - git config core.hooksPath .githooks
+      - chmod +x .githooks/pre-commit
+      - echo "Git hooks configured! Pre-commit hook is now active for changelog generation."
 
   build:
     desc: Build the MkDocs site

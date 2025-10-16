@@ -24,7 +24,14 @@ echo "Updating changelog with new entries..."
 if [ -f "CHANGELOG.md" ]; then
     # Changelog exists, only add new unreleased entries
     echo "Existing changelog found. Adding new unreleased entries..."
-    git-cliff --unreleased --prepend CHANGELOG.md
+    # Generate unreleased entries and prepend to existing changelog
+    git-cliff --unreleased --output /tmp/new_entries.md
+    if [ -s /tmp/new_entries.md ]; then
+        # If there are new entries, prepend them to existing changelog
+        cat /tmp/new_entries.md CHANGELOG.md > /tmp/updated_changelog.md
+        mv /tmp/updated_changelog.md CHANGELOG.md
+        rm -f /tmp/new_entries.md
+    fi
 else
     # No changelog exists, create it from scratch
     echo "No existing changelog found. Creating new changelog..."

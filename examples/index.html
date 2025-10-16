@@ -589,9 +589,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#documentation-services" class="md-nav__link">
+  <a href="#minimal-services" class="md-nav__link">
     <span class="md-ellipsis">
-      Documentation Services
+      Minimal Services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-source-documentation-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Source Documentation Services
     </span>
   </a>
   
@@ -639,41 +648,29 @@
 
 
 <h1 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h1>
-<h2 id="documentation-services">Documentation Services<a class="headerlink" href="#documentation-services" title="Permanent link">&para;</a></h2>
+<h2 id="minimal-services">Minimal Services<a class="headerlink" href="#minimal-services" title="Permanent link">&para;</a></h2>
+<details class="example">
+<summary>Directory Interface Example</summary>
+<p>Here's the codebase interface directory implementation:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>├── AGENTS.md                   # Documentation for AI agents that interact with this codebase
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── CONTRIBUTING.md             # How to contribute to this codebase
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── PULL_REQUEST_TEMPLATE.md    # Template for pull requests
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── README.md                   # Overview of this codebase for users
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>├── RUNBOOK.md                  # Operational documentation for operators
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├── SUPPORT.md                  # Support guidelines for this codebase
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>├── Taskfile.yml                # Taskfile for managing tasks
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── .gitattributes              # Git attributes file
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>├── .gitignore                  # Git ignore file
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>└── .editorconfig               # Editor configuration file
+</code></pre></div>
+</details>
+<h2 id="open-source-documentation-services">Open Source Documentation Services<a class="headerlink" href="#open-source-documentation-services" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://github.com/codebase-interface/codebaseinterface" target="_blank">Codebase Interface</a></li>
 </ul>
 <details class="example">
 <summary>Directory Interface Example</summary>
 <p>Here's the codebase interface directory implementation:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>├── AGENTS.md                   # Documentation for AI agents that interact with this codebase
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── CHANGELOG.md                # Documentation of notable changes
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── CODE_OF_CONDUCT.md          # Code of conduct for contributors
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── CONTRIBUTING.md             # How to contribute to this codebase
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>├── LANGUAGE.md                 # Ubiquitous language for this codebase
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├── LICENSE.md                  # License for this codebase
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>├── PULL_REQUEST_TEMPLATE.md    # Template for pull requests
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── README.md                   # Overview of this codebase for users
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>├── RUNBOOK.md                  # Operational documentation for operators
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>├── SECURITY.md                 # Security policy for this codebase
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>├── SUPPORT.md                  # Support guidelines for this codebase
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>├── TODO.md                     # List of tasks to be completed
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>├── Taskfile.yml                # Taskfile for managing tasks
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>├── cliff.toml                  # Configuration file for the Cliff tool
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>├── docs                        # Documentation directory        
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>│   ├── README.md               # Main documentation landing page       
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>│   └──  ...
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>├── mkdocs.yml                  # MkDocs configuration file
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>├── .editorconfig               # Editor configuration file
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>├── .gitattributes              # Git attributes file
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>├── .gitignore                  # Git ignore file
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>└── .editorconfig               # Editor configuration file
-</code></pre></div>
-</details>
-<h2 id="source-aligned-services">Source Aligned Services<a class="headerlink" href="#source-aligned-services" title="Permanent link">&para;</a></h2>
-<details class="example">
-<summary>Directory Interface Example</summary>
-<p>Here's a source aligned directory implementation:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>├── AGENTS.md                   # Documentation for AI agents that interact with this codebase
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├── CHANGELOG.md                # Documentation of notable changes
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>├── CODE_OF_CONDUCT.md          # Code of conduct for contributors
@@ -691,27 +688,53 @@
 <a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>├── docs                        # Documentation directory        
 <a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>│   ├── README.md               # Main documentation landing page       
 <a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>│   └──  ...
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>├── design                      # Design directory        
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>│   ├── README.md               # Introduction to design
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>│   ├── contracts               # Any Open API, AsyncAPI, data contracts etc
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>│   └── decisions               # Architectural decision records localised to the service
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>├── behaviour                   # Behaviour directory        
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>│   ├── README.md               # Introduction to behaviour
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>│   └── ...                     # Behaviour implementation encapsulating business logic
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>├── experiences                 # Experiences directory        
-<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>│   ├── README.md               # Introduction to experiences
-<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>│   └── ...                     # UI implementation for behaviour such as web, app, AI etc
-<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>├── publication                 # Publication directory
-<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>│   ├── README.md               # Introduction to publication
-<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>│   └── ...                     # Implementation of data publications
-<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>├── outcomes                    # Outcomes directory
-<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>│   ├── README.md               # Introduction to outcomes
-<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>│   └── ...                     # UI implementation for outcomes such as reports, AI etc
-<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>├── mkdocs.yml                  # MkDocs configuration file
-<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>├── .editorconfig               # Editor configuration file
-<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>├── .gitattributes              # Git attributes file
-<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>├── .gitignore                  # Git ignore file
-<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>└── .editorconfig               # Editor configuration file
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>├── mkdocs.yml                  # MkDocs configuration file
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>├── .gitattributes              # Git attributes file
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>├── .gitignore                  # Git ignore file
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>└── .editorconfig               # Editor configuration file
+</code></pre></div>
+</details>
+<h2 id="source-aligned-services">Source Aligned Services<a class="headerlink" href="#source-aligned-services" title="Permanent link">&para;</a></h2>
+<details class="example">
+<summary>Directory Interface Example</summary>
+<p>Here's a source aligned directory implementation:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>├── AGENTS.md                   # Documentation for AI agents that interact with this codebase
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── CHANGELOG.md                # Documentation of notable changes
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── CODE_OF_CONDUCT.md          # Code of conduct for contributors
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>├── CONTRIBUTING.md             # How to contribute to this codebase
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>├── LANGUAGE.md                 # Ubiquitous language for this codebase
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>├── LICENSE.md                  # License for this codebase
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>├── PULL_REQUEST_TEMPLATE.md    # Template for pull requests
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>├── README.md                   # Overview of this codebase for users
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>├── RUNBOOK.md                  # Operational documentation for operators
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>├── SECURITY.md                 # Security policy for this codebase
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>├── SUPPORT.md                  # Support guidelines for this codebase
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>├── TODO.md                     # List of tasks to be completed
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>├── Taskfile.yml                # Taskfile for managing tasks
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>├── cliff.toml                  # Configuration file for the Cliff tool
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>├── docs                        # Documentation directory        
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>│   ├── README.md               # Main documentation landing page       
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>│   └──  ...
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>├── design                      # Design directory        
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>│   ├── README.md               # Introduction to design
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>│   ├── contracts               # Any Open API, AsyncAPI, data contracts etc
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>│   └── decisions               # Architectural decision records localised to the service
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>├── behaviour                   # Behaviour directory        
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>│   ├── README.md               # Introduction to behaviour
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>│   └── ...                     # Behaviour implementation encapsulating business logic
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>├── experiences                 # Experiences directory        
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>│   ├── README.md               # Introduction to experiences
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>│   └── ...                     # UI implementation for behaviour such as web, app, AI etc
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>├── publication                 # Publication directory
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>│   ├── README.md               # Introduction to publication
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>│   └── ...                     # Implementation of data publications
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>├── outcomes                    # Outcomes directory
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>│   ├── README.md               # Introduction to outcomes
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>│   └── ...                     # UI implementation for outcomes such as reports, AI etc
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>├── mkdocs.yml                  # MkDocs configuration file
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>├── .gitattributes              # Git attributes file
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>├── .gitignore                  # Git ignore file
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>└── .editorconfig               # Editor configuration file
 </code></pre></div>
 </details>
 <!-- markdownlint-disable MD033 -->
@@ -756,7 +779,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 16, 2025 14:48:58 UTC">October 16, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 16, 2025 18:59:24 UTC">October 16, 2025</span>
   </span>
 
     

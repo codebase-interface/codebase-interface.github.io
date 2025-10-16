@@ -2,6 +2,12 @@
 
 This documentation will help you understand the ubiquitous language used in this codebase.
 
+- [🏠 Home](README.md){ .md-button .md-button--primary }
+- [Language](#language)
+  - [Terms](#terms)
+
+## Terms
+
 | Term | Definition |
 |-|-|
 | Codebase interface | The codebase interface is the particular layer around a codebase that an audience will interact with to fulfil their needs. |

@@ -2,7 +2,7 @@
 
 This documentation will help you understand the ubiquitous language used in this codebase.
 
-- [🏠 Home](README.md){ .md-button .md-button--primary }
+- [🏠 Home](README.md)
 - [Language](#language)
   - [Terms](#terms)
 

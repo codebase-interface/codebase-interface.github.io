@@ -1,13 +1,13 @@
 [changelog]
 header = "# Changelog"
 body = """{% if version %}
-## [{{ version }}] - {{ timestamp | date(format="%Y-%m-%d") }}
+## [{{ version }}] - {{ timestamp | date(format="%Y-%m-%d %H:%M:%S") }}
 {% else %}
 ## [unreleased]
 {% endif %}{% for group, commits in commits | group_by(attribute="group") %}
 ### {{ group | striptags | trim }}
 {% for commit in commits %}
-- {{ commit.message | upper_first }} _({{ commit.author.timestamp | date(format="%Y-%m-%d") }})_{% endfor %}
+- {{ commit.message | upper_first }} _({{ commit.author.timestamp | date(format="%Y-%m-%d %H:%M:%S") }})_{% endfor %}
 {% endfor %}
 """
 
@@ -42,4 +42,4 @@ commit_parsers = [
 
 filter_commits = false
 topo_order = false
-sort_commits = "oldest"
+sort_commits = "newest"

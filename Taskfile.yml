@@ -46,9 +46,33 @@ tasks:
       - git cliff --latest --output CHANGELOG.md --prepend
 
   changelog:setup-hook:
-    desc: Setup git hook to automatically update changelog on commit
+    desc: Setup git hook to automatically update and commit changelog
     cmds:
       - echo '#!/bin/bash' > .git/hooks/post-commit
-      - echo 'git cliff --output CHANGELOG.md' >> .git/hooks/post-commit
+      - echo 'git cliff --output CHANGELOG.md' >> .git/hooks/post-commit  
+      - echo 'git add CHANGELOG.md' >> .git/hooks/post-commit
+      - echo 'git diff --cached --quiet || git commit --amend --no-edit' >> .git/hooks/post-commit
       - chmod +x .git/hooks/post-commit
-      - echo "Git hook installed! Changelog will update automatically on each commit."
+      - echo "Git hook installed! Changelog will update and amend automatically on each commit."
+
+  changelog:setup-pre-commit:
+    desc: Setup pre-commit hook to update changelog before committing
+    cmds:
+      - echo '#!/bin/bash' > .git/hooks/pre-commit
+      - echo 'git cliff --output CHANGELOG.md' >> .git/hooks/pre-commit
+      - echo 'git add CHANGELOG.md' >> .git/hooks/pre-commit
+      - chmod +x .git/hooks/pre-commit
+      - echo "Pre-commit hook installed! Changelog will update automatically before each commit."
+
+  changelog:remove-hooks:
+    desc: Remove changelog git hooks
+    cmds:
+      - rm -f .git/hooks/post-commit .git/hooks/pre-commit
+      - echo "Git hooks removed."
+
+  changelog:commit:
+    desc: Update changelog and commit it
+    cmds:
+      - git cliff --output CHANGELOG.md
+      - git add CHANGELOG.md
+      - git commit -m "docs: update changelog" || echo "No changes to commit"

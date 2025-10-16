@@ -1,6 +1,25 @@
 # Examples
 
-## Documentation Services
+## Minimal Services
+
+??? example "Directory Interface Example"
+    Here's the codebase interface directory implementation:
+
+    ```txt
+    ├── AGENTS.md                   # Documentation for AI agents that interact with this codebase
+    ├── CONTRIBUTING.md             # How to contribute to this codebase
+    ├── PULL_REQUEST_TEMPLATE.md    # Template for pull requests
+    ├── README.md                   # Overview of this codebase for users
+    ├── RUNBOOK.md                  # Operational documentation for operators
+    ├── SUPPORT.md                  # Support guidelines for this codebase
+    ├── Taskfile.yml                # Taskfile for managing tasks
+    ├── .gitattributes              # Git attributes file
+    ├── .gitignore                  # Git ignore file
+    └── .editorconfig               # Editor configuration file
+
+    ```
+
+## Open Source Documentation Services
 
 - [Codebase Interface](https://github.com/codebase-interface/codebaseinterface){target="_blank"}
 
@@ -26,7 +45,6 @@
     │   ├── README.md               # Main documentation landing page       
     │   └──  ...
     ├── mkdocs.yml                  # MkDocs configuration file
-    ├── .editorconfig               # Editor configuration file
     ├── .gitattributes              # Git attributes file
     ├── .gitignore                  # Git ignore file
     └── .editorconfig               # Editor configuration file
@@ -73,7 +91,6 @@
     │   ├── README.md               # Introduction to outcomes
     │   └── ...                     # UI implementation for outcomes such as reports, AI etc
     ├── mkdocs.yml                  # MkDocs configuration file
-    ├── .editorconfig               # Editor configuration file
     ├── .gitattributes              # Git attributes file
     ├── .gitignore                  # Git ignore file
     └── .editorconfig               # Editor configuration file

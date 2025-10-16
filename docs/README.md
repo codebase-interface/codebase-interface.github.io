@@ -6,6 +6,15 @@ The codebase interface is a set of principles and practices that allow us to ide
 
 By providing specific interfaces for each audience perspective, we can ensure that everyone has a clean and maintainable experience when interacting with a codebase.
 
+## Guide
+
+- [Principles](./principles.md)
+- [Audiences](./audiences.md)
+- [Interfaces](./interfaces.md)
+- [Benefits](./benefits.md)
+- [Examples](./examples.md)
+- [Tooling](./tooling.md)
+
 ## Support
 
 If your codebase uses codebase interface principles please support the initiative by starring the [Codebase Interface GitHub repository](https://github.com/codebase-interface/codebaseinterface){target="_blank"} and placing the below markdown in the README of your repo.

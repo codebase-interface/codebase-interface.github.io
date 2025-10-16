@@ -34,19 +34,8 @@ theme:
 nav:
   - Welcome: README.md
   - Principles: principles.md
-  - Audiences:
-      - audiences/contributors.md
-      - audiences/users.md
-      - audiences/operators.md
-      - audiences/ai_agents.md
-      - audiences/build_agents.md
-  - Interfaces:
-      - interfaces/readme.md
-      - interfaces/contributing.md
-      - interfaces/runbook.md
-      - interfaces/agents.md
-      - interfaces/changelog.md
-      - interfaces/language.md
+  - Audiences: audiences.md
+  - Interfaces: interfaces.md
   - Benefits: benefits.md
   - Tooling: tooling.md
   - Examples: examples.md

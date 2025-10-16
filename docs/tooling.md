@@ -33,4 +33,6 @@ Whilst git is not the only source control methodology out there and can be chall
 
 - [`.dockerignore`](https://docs.docker.com/engine/reference/builder/#dockerignore-file){target="_blank"} - A plain text file that tells Docker which files and directories to ignore when building an image. It is cross platform and works on Windows, MacOS and Linux. It is also IDE agnostic as it can be used with any text editor or IDE that supports Docker.
 
+[← Previous: Benefits](../){ .md-button }
+[Next: Examples →](../examples/){ .md-button .md-button--primary style="float: right;" }
 

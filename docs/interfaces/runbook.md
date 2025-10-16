@@ -1,3 +1,0 @@
-# Runbook
-
-- **Primary Audience**: Operators

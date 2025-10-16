@@ -41,6 +41,7 @@
 
 ### 💼 Other
 
+- Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 14:34:13)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 14:05:06)_
 - Update welcome message in README _(2025-10-16 13:35:35)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebaseinterface _(2025-10-16 13:06:45)_
@@ -60,6 +61,8 @@
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-16 14:05:19)_
+- Expand examples for source aligned services, detailing directory structure and documentation files _(2025-10-16 14:34:13)_
 - Update changelog [skip ci] _(2025-10-16 13:35:44)_
 - Update changelog [skip ci] _(2025-10-16 13:07:26)_
 - Restructure documentation by consolidating audience and interface sections, removing outdated files, and enhancing navigation _(2025-10-16 14:05:05)_

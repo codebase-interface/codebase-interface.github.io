@@ -20,8 +20,9 @@ The codebase interface is a set of principles that aim to promote the ease of us
 | Link | Description |
 |-|-|
 | [CONTRIBUTING](CONTRIBUTING.md) | Guidelines for contributing to this service. |
-| [CHANGELOG](CHANGELOG.md) | A log of all notable changes made to this service. |
 | [LANGUAGE](LANGUAGE.md) | Ubiquitous language used for this codebase and service. |
-| [TODO](TODO.md) | Outstanding tasks and ideas for this service. |
-| [SUPPORT](SUPPORT.md) | Outstanding tasks and ideas for this service. |
 | [DOCS](docs/README.md) | Extended and online documentation for this service. |
+| [SUPPORT](SUPPORT.md) | Contact support for this service. |
+| [CHANGELOG](CHANGELOG.md) | A log of all notable changes made to this service. |
+| [TODO](TODO.md) | Outstanding tasks and ideas for this service. |
+| [AGENTS](AGENTS.md) | AI agent based documentation to support with AI assisted tasks. |

@@ -44,6 +44,7 @@
 
 ### 💼 Other
 
+- Update interfaces.md _(2025-10-17 10:25:00)_
 - Enhance examples in documentation
 
 Added examples for directory interface and open source documentation services. _(2025-10-16 18:59:24)_
@@ -91,6 +92,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-16 18:59:31)_
 - Update changelog [skip ci] _(2025-10-16 18:57:21)_
 - Update changelog [skip ci] _(2025-10-16 18:57:05)_
 - Update changelog [skip ci] _(2025-10-16 18:56:36)_

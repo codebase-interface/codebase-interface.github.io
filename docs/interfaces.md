@@ -13,6 +13,8 @@
 
 - **Primary Audience**: Operators
 
+## CLI
+
 ## Changelog
 
 - **Primary Audience**: Users

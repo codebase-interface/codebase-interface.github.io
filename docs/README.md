@@ -19,10 +19,6 @@ By providing specific interfaces for each audience perspective, we can ensure th
 
 Remember your codebase is a product with multiple users. We should treat it as such by providing great experiences for all audiences that interact with it.
 
-## Overview
-
-Remember your codebase is a product with multiple users. We should treat it as such by providing great experiences for all audiences that interact with it.
-
 ```mermaid
 graph TD
     %% Central Codebase

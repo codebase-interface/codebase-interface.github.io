@@ -7,7 +7,11 @@ This documentation will help you contribute to this codebase.
 [Install taskfile](https://taskfile.dev/docs/installation) via your preferred method.
 
 ```bash
-go install github.com/go-task/task/v3/cmd/task@latest
+mkdir -p ~/.local/bin && sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
+```
+
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
 ```
 
 Confirm task installation

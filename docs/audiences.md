@@ -18,11 +18,11 @@ Now that you understand the audiences its time to explore the interfaces designe
 <div class="navigation-buttons" markdown="1" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
 
 <div markdown="1">
-[← Previous: Principles](../principles/){ .md-button }
+[← Previous: Principles](principles.md){ .md-button }
 </div>
 
 <div markdown="1" style="text-align: right;">
-[Next: Interfaces →](../interfaces/){ .md-button .md-button--primary }
+[Next: Interfaces →](interfaces.md){ .md-button .md-button--primary }
 </div>
 
 </div>

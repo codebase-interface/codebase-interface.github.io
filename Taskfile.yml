@@ -18,8 +18,8 @@ tasks:
       - pip install mkdocs-material
       - pip install mkdocs-git-revision-date-localized-plugin
       - pip install pymdown-extensions
-      - echo "Setup complete! Changelog is automatically generated via GitHub Actions."
       - pip install mkdocs-mermaid2-plugin
+      - echo "Setup complete! Changelog is automatically generated via GitHub Actions."
     silent: true
 
   build:

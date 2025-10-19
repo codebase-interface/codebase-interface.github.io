@@ -33,6 +33,7 @@
 
 ### 🐛 Bug Fixes
 
+- Add mkdocs-mermaid2-plugin installation to setup and deploy workflows _(2025-10-19 11:48:07)_
 - Update Taskfile and mkdocs configuration for improved setup and mermaid support _(2025-10-19 11:43:17)_
 - Remove test line and improve wording in README _(2025-10-16 15:24:10)_
 - Remove redundant CNAME copying step and streamline deploy workflow _(2025-10-16 15:22:17)_
@@ -45,6 +46,7 @@
 
 ### 💼 Other
 
+- Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-10-19 11:48:46)_
 - Update interfaces.md _(2025-10-17 10:25:00)_
 - Enhance examples in documentation
 
@@ -93,6 +95,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-19 11:43:33)_
 - Update changelog [skip ci] _(2025-10-19 10:51:29)_
 - Update installation instructions and fix navigation links _(2025-10-19 10:51:13)_
 - Update changelog [skip ci] _(2025-10-17 10:25:09)_

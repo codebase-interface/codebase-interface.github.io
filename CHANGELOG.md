@@ -92,6 +92,8 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update installation instructions and fix navigation links _(2025-10-19 10:51:13)_
+- Update changelog [skip ci] _(2025-10-17 10:25:09)_
 - Update changelog [skip ci] _(2025-10-16 18:59:31)_
 - Update changelog [skip ci] _(2025-10-16 18:57:21)_
 - Update changelog [skip ci] _(2025-10-16 18:57:05)_

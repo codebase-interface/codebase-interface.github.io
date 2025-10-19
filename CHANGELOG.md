@@ -47,6 +47,9 @@
 
 ### 💼 Other
 
+- Modify Presentations link in README
+
+Updated the Presentations link to open in a new tab. _(2025-10-19 14:38:45)_
 - Update README.md _(2025-10-19 14:38:11)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-10-19 11:51:42)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-10-19 11:48:46)_
@@ -98,6 +101,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-19 14:38:24)_
 - Update changelog [skip ci] _(2025-10-19 11:51:56)_
 - Update changelog [skip ci] _(2025-10-19 11:48:59)_
 - Update changelog [skip ci] _(2025-10-19 11:43:33)_

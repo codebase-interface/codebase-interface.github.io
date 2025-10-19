@@ -33,6 +33,7 @@
 
 ### 🐛 Bug Fixes
 
+- Update Taskfile and mkdocs configuration for improved setup and mermaid support _(2025-10-19 11:43:17)_
 - Remove test line and improve wording in README _(2025-10-16 15:24:10)_
 - Remove redundant CNAME copying step and streamline deploy workflow _(2025-10-16 15:22:17)_
 - Streamline CNAME copying in deploy workflow _(2025-10-16 15:18:32)_
@@ -92,6 +93,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-19 10:51:29)_
 - Update installation instructions and fix navigation links _(2025-10-19 10:51:13)_
 - Update changelog [skip ci] _(2025-10-17 10:25:09)_
 - Update changelog [skip ci] _(2025-10-16 18:59:31)_

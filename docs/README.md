@@ -14,7 +14,7 @@ By providing specific interfaces for each audience perspective, we can ensure th
 - [Benefits](./benefits.md)
 - [Examples](./examples.md)
 - [Tooling](./tooling.md)
-- [Presentations]((https://codebaseinterface.org/presentations/)
+- [Presentations](https://codebaseinterface.org/presentations/){target="_blank"} 
 
 ## Overview
 

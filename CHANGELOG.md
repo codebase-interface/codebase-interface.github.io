@@ -47,6 +47,7 @@
 
 ### 💼 Other
 
+- Create Contribute.md _(2025-10-24 19:34:35)_
 - Modify Presentations link in README
 
 Updated the Presentations link to open in a new tab. _(2025-10-19 14:38:45)_
@@ -101,6 +102,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-19 14:38:57)_
 - Update changelog [skip ci] _(2025-10-19 14:38:24)_
 - Update changelog [skip ci] _(2025-10-19 11:51:56)_
 - Update changelog [skip ci] _(2025-10-19 11:48:59)_

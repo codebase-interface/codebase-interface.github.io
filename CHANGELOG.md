@@ -47,6 +47,7 @@
 
 ### 💼 Other
 
+- Update mkdocs.yml _(2025-10-24 19:41:51)_
 - Update README.md _(2025-10-24 19:40:58)_
 - Update mkdocs.yml _(2025-10-24 19:39:48)_
 - Update Contribute.md _(2025-10-24 19:37:54)_
@@ -105,6 +106,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-24 19:41:15)_
 - Update changelog [skip ci] _(2025-10-24 19:40:02)_
 - Update changelog [skip ci] _(2025-10-24 19:38:07)_
 - Update changelog [skip ci] _(2025-10-24 19:34:49)_

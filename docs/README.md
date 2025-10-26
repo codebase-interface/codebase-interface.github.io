@@ -2,7 +2,7 @@
 
 Welcome to the codebase interface initiative!
 
-The codebase interface is a set of principles and practices that allow us to identify and understand all perspectives of interacting with a codebase, including contributors, users, operators, AI agents, and build agents.
+The codebase interface is a set of principles and practices that allow us to identify and understand all perspectives of interacting with a codebase, including contributors, consumers, operators, AI agents, and build agents.
 
 By providing specific interfaces for each audience perspective, we can ensure that we help all users of the codebase by providing a great experience with clean and maintainable interfaces for all!
 

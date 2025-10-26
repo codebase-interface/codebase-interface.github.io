@@ -34,7 +34,7 @@ graph TD
     BUILD["⚙️ Taskfile<br/><small>Build Interface</small>"]
     
     %% Audience Groups
-    USERS["👤 Service Users<br/><small>End Users</small>"]
+    CONSUMERS["👤 Service Users<br/><small>End Users</small>"]
     CONTRIBUTORS["🧑‍💻 Contributors<br/><small>Developers</small>"]
     OPERATORS["🛠️ Operators<br/><small>DevOps/SRE</small>"]
     AI_AGENTS["🤖 AI Agents<br/><small>Copilot/ChatGPT</small>"]
@@ -48,7 +48,7 @@ graph TD
     BUILD -.-> CODEBASE
     
     %% Connections: Audiences to Interfaces
-    USERS ==> README
+    CONSUMERS ==> README
     CONTRIBUTORS ==> CONTRIBUTING
     OPERATORS ==> RUNBOOK
     AI_AGENTS ==> AGENTS
@@ -61,7 +61,7 @@ graph TD
     
     class CODEBASE codebase
     class README,CONTRIBUTING,RUNBOOK,AGENTS,BUILD interface
-    class USERS,CONTRIBUTORS,OPERATORS,AI_AGENTS,BUILD_AGENTS audience
+    class CONSUMERS,CONTRIBUTORS,OPERATORS,AI_AGENTS,BUILD_AGENTS audience
 ```
 
 ## Support

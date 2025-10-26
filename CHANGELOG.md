@@ -47,6 +47,7 @@
 
 ### 💼 Other
 
+- Update README.md _(2025-10-26 20:22:15)_
 - Update benefits.md _(2025-10-26 20:21:10)_
 - Update audiences.md _(2025-10-26 20:20:00)_
 - Update README.md _(2025-10-24 19:42:33)_
@@ -109,6 +110,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-26 20:21:28)_
 - Update changelog [skip ci] _(2025-10-26 20:20:14)_
 - Update changelog [skip ci] _(2025-10-24 19:42:45)_
 - Update changelog [skip ci] _(2025-10-24 19:42:05)_

@@ -4,6 +4,7 @@
 
 ### 🚀 Features
 
+- Introduce Codebase Interface documentation and tooling _(2025-11-15 13:42:43)_
 - Implement GitHub Actions workflow for automatic changelog generation _(2025-10-16 12:13:14)_
 - Update pre-commit hook to regenerate full changelog for new commits _(2025-10-16 12:07:12)_
 - Enhance development setup with automatic Git hooks for changelog generation _(2025-10-16 12:05:27)_
@@ -111,6 +112,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-10-26 20:23:46)_
 - Update changelog [skip ci] _(2025-10-26 20:22:27)_
 - Update changelog [skip ci] _(2025-10-26 20:21:28)_
 - Update changelog [skip ci] _(2025-10-26 20:20:14)_

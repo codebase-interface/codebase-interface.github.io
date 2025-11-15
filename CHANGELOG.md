@@ -51,6 +51,7 @@
 
 ### 💼 Other
 
+- Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-15 14:31:57)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-15 14:21:15)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-15 14:17:45)_
 - No code changes detected; skipping commit. _(2025-11-15 14:15:19)_
@@ -121,6 +122,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-11-15 14:23:59)_
 - Update changelog [skip ci] _(2025-11-15 14:21:24)_
 - Update changelog [skip ci] _(2025-11-15 14:17:54)_
 - Update changelog [skip ci] _(2025-11-15 14:15:28)_
@@ -188,6 +190,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### ⚙️ Miscellaneous Tasks
 
+- Enhance deployment workflow by adding Node.js setup and improving linting process _(2025-11-15 14:31:57)_
 - Remove npm cache from Node.js setup in deployment workflow _(2025-11-15 14:23:50)_
 - Streamline Python dependency management and plugin verification in workflows _(2025-11-15 14:21:15)_
 - Update GitHub Actions to use latest versions of setup-python, setup-task, upload-pages-artifact, deploy-pages, and github-script _(2025-11-15 14:17:44)_

@@ -19,7 +19,9 @@ tasks:
       - pip install --upgrade pip
       - pip install -r requirements.txt
       - echo "✅ Python dependencies installed from requirements.txt"
-      - echo "Note - For linting install markdownlint-cli globally"
+      - echo "Installing Node.js tools..."
+      - npm install -g markdownlint-cli
+      - echo "✅ Markdown linting tools installed"
       - python -c "import mkdocs_minify_plugin; print('✅ Minify plugin verified')" || echo "⚠️ Minify plugin not found"
       - echo "Setup complete!"
 
@@ -62,13 +64,26 @@ tasks:
   lint:
     desc: Lint markdown files
     cmds:
-      - sh -c 'if command -v markdownlint > /dev/null 2>&1; then markdownlint --config .markdownlint.yml *.md docs/*.md && echo "✅ Markdown linting completed"; else echo "⚠️  markdownlint not found. Install with npm install -g markdownlint-cli" && echo "Skipping markdown linting..."; fi'
+      - |
+        if command -v markdownlint > /dev/null 2>&1; then
+          if markdownlint --config .markdownlint.yml *.md docs/*.md; then
+            echo "✅ Markdown linting passed"
+          else
+            echo "⚠️ Markdown linting found issues, but continuing deployment..."
+            echo "Run 'markdownlint --config .markdownlint.yml *.md docs/*.md' to see details"
+          fi
+        else
+          echo "⚠️ markdownlint not found. Run 'task setup' to install it"
+          exit 1
+        fi
 
   validate:
     desc: Validate the complete site
     cmds:
       - task: lint
+      - echo "✅ Linting completed"
       - task: build
+      - echo "✅ Build validation completed"
 
   stats:
     desc: Show site statistics

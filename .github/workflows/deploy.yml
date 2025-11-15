@@ -42,6 +42,11 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
       - name: Setup Task
         uses: arduino/setup-task@v2
         with:
@@ -53,17 +58,8 @@ jobs:
       - name: Verify critical plugins
         run: |
           python -c "import mkdocs_minify_plugin; print('✅ mkdocs-minify-plugin installed')"
-          echo "✅ All MkDocs plugins verified"
-
-      - name: Setup Node.js (for Lighthouse)
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
-      - name: Install markdown linting tools
-        run: |
-          npm install -g markdownlint-cli
-          echo "✅ Linting tools installed"
+          markdownlint --version && echo "✅ markdownlint-cli installed"
+          echo "✅ All tools verified"
 
       - name: Validate configuration
         run: |

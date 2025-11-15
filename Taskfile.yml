@@ -25,6 +25,7 @@ tasks:
       - pip install pymdown-extensions
       - echo "✅ Python dependencies installed"
       - echo "Note - For linting install markdownlint-cli globally"
+      - python -c "import mkdocs_minify_plugin; print('✅ Minify plugin verified')" || echo "⚠️ Minify plugin not found"
       - echo "Setup complete!"
 
   install:

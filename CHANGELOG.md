@@ -4,6 +4,7 @@
 
 ### 🚀 Features
 
+- Verify and reinstall MkDocs plugins in deployment workflow _(2025-11-15 14:10:25)_
 - Update deployment workflow and Taskfile for improved Python and Node.js setup _(2025-11-15 14:04:47)_
 - Add interface example section with enhanced styling _(2025-11-15 13:57:13)_
 - Introduce Codebase Interface documentation and tooling _(2025-11-15 13:42:43)_
@@ -117,6 +118,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-11-15 14:04:55)_
 - Update changelog [skip ci] _(2025-11-15 13:57:23)_
 - Update changelog [skip ci] _(2025-11-15 13:49:25)_
 - Update changelog [skip ci] _(2025-11-15 13:42:51)_

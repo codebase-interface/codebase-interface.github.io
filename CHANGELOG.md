@@ -4,6 +4,7 @@
 
 ### 🚀 Features
 
+- Update deployment workflow and Taskfile for improved Python and Node.js setup _(2025-11-15 14:04:47)_
 - Add interface example section with enhanced styling _(2025-11-15 13:57:13)_
 - Introduce Codebase Interface documentation and tooling _(2025-11-15 13:42:43)_
 - Implement GitHub Actions workflow for automatic changelog generation _(2025-10-16 12:13:14)_
@@ -49,6 +50,7 @@
 
 ### 💼 Other
 
+- Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-15 14:04:47)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-15 13:49:14)_
 - Remove multi-repo search functionality, associated styles, and backup documentation files; update mkdocs configuration to reflect changes. _(2025-11-15 13:48:14)_
 - Update README.md _(2025-10-26 20:23:32)_
@@ -115,6 +117,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-11-15 13:57:23)_
 - Update changelog [skip ci] _(2025-11-15 13:49:25)_
 - Update changelog [skip ci] _(2025-11-15 13:42:51)_
 - Update changelog [skip ci] _(2025-10-26 20:23:46)_

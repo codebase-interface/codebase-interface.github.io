@@ -4,6 +4,7 @@
 
 ### 🚀 Features
 
+- Enhance search functionality with external repository suggestions and improve documentation layout _(2025-11-15 14:47:20)_
 - Verify and reinstall MkDocs plugins in deployment workflow _(2025-11-15 14:10:25)_
 - Update deployment workflow and Taskfile for improved Python and Node.js setup _(2025-11-15 14:04:47)_
 - Add interface example section with enhanced styling _(2025-11-15 13:57:13)_
@@ -51,6 +52,7 @@
 
 ### 💼 Other
 
+- Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-15 14:47:20)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-15 14:31:57)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-15 14:21:15)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-15 14:17:45)_
@@ -122,6 +124,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-11-15 14:38:08)_
 - Update changelog [skip ci] _(2025-11-15 14:32:08)_
 - Update changelog [skip ci] _(2025-11-15 14:23:59)_
 - Update changelog [skip ci] _(2025-11-15 14:21:24)_

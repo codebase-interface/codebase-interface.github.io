@@ -1,5 +1,5 @@
 site_name: Codebase Interface
-site_description: A documented set of principles that promote ease of use of codebases across languages, frameworks, and audiences - including contributors, consumers, operators, AI agents, and build agents.
+site_description: A comprehensive set of principles and tools that promote ease of use of codebases across languages, frameworks, and audiences - including contributors, consumers, operators, AI agents, and build agents. Explore documentation, CLI tools, and implementation guides.
 site_url: https://codebase-interface.github.io
 repo_url: https://github.com/codebase-interface/codebase-interface.github.io
 repo_name: codebase-interface/codebase-interface.github.io
@@ -99,6 +99,12 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/codebase-interface
       name: GitHub Organization
+    - icon: fontawesome/brands/github
+      link: https://github.com/codebase-interface/docs
+      name: Documentation Repository
+    - icon: fontawesome/brands/github
+      link: https://github.com/codebase-interface/cli
+      name: CLI Tools Repository
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/codebaseinterface
       name: Follow us on Twitter
@@ -109,6 +115,18 @@ extra:
     provider: mike
     default: latest
   generator: false
+  # External repository metadata for search and discovery
+  external_repos:
+    docs:
+      name: "Documentation Hub"
+      url: "https://github.com/codebase-interface/docs"
+      description: "Comprehensive guides, templates, and specifications"
+      topics: ["documentation", "templates", "guides", "specifications", "best-practices"]
+    cli:
+      name: "CLI Tools"
+      url: "https://github.com/codebase-interface/cli"
+      description: "Command-line tools for automation and validation"
+      topics: ["cli", "automation", "validation", "generation", "tools"]
 
 copyright: |
   &copy; 2023-2025 <a href="https://github.com/codebase-interface" target="_blank" rel="noopener">Codebase Interface Contributors</a><br>

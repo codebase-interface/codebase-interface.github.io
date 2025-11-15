@@ -96,6 +96,66 @@
   margin: 2rem 0;
 }
 
+.resources-grid {
+  margin: 2rem 0;
+}
+
+.resources-grid h3 {
+  color: var(--ci-primary);
+  border-bottom: 2px solid var(--ci-primary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.resources-grid > div {
+  background: var(--md-code-bg-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--ci-primary);
+  box-shadow: var(--ci-shadow);
+}
+
+.resources-grid ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resources-grid li {
+  margin: 0.75rem 0;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.resources-grid li:before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: var(--ci-primary);
+  font-size: 0.8rem;
+}
+
+.resources-grid table {
+  margin-top: 1rem;
+}
+
+.resources-grid table th {
+  background: var(--ci-primary) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.resources-grid table td a {
+  color: var(--ci-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.resources-grid table td a:hover {
+  text-decoration: underline;
+}
+
 /* Card Styling */
 .principle-card {
   background: var(--md-default-bg-color);

@@ -39,6 +39,26 @@ function initializeSearchEnhancements() {
     const searchInput = document.querySelector('.md-search__input');
     if (!searchInput) return;
 
+    // External repositories metadata for enhanced search
+    const externalRepos = {
+        docs: {
+            name: 'Documentation Hub',
+            url: 'https://codebase-interface.github.io/docs',
+            searchUrl: 'https://codebase-interface.github.io/docs/search/?q=',
+            repoUrl: 'https://github.com/codebase-interface/docs',
+            repoSearchUrl: 'https://github.com/codebase-interface/docs/search?q=',
+            topics: ['templates', 'guides', 'specifications', 'best-practices', 'architecture', 'frameworks']
+        },
+        cli: {
+            name: 'CLI Tools',
+            url: 'https://codebase-interface.github.io/cli',
+            searchUrl: 'https://codebase-interface.github.io/cli/search/?q=',
+            repoUrl: 'https://github.com/codebase-interface/cli',
+            repoSearchUrl: 'https://github.com/codebase-interface/cli/search?q=',
+            topics: ['automation', 'validation', 'generation', 'commands', 'installation', 'configuration']
+        }
+    };
+
     // Add search suggestions for common queries
     const commonQueries = [
         'documentation standards',
@@ -47,7 +67,11 @@ function initializeSearchEnhancements() {
         'contributing guidelines',
         'audience interfaces',
         'taskfile',
-        'automation'
+        'automation',
+        'templates',
+        'validation',
+        'installation',
+        'configuration'
     ];
 
     // Enhanced search with repository context
@@ -55,6 +79,9 @@ function initializeSearchEnhancements() {
         const query = e.target.value.toLowerCase();
         
         if (query.length > 2) {
+            // Add external search suggestions
+            addExternalSearchSuggestions(query, externalRepos);
+            
             // Track search queries for analytics
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'search', {
@@ -64,6 +91,183 @@ function initializeSearchEnhancements() {
             }
         }
     }, 300));
+
+    // Add external search button to search results
+    addExternalSearchOptions(externalRepos);
+}
+
+/**
+ * Add external repository search suggestions
+ */
+function addExternalSearchSuggestions(query, repos) {
+    // Look for existing external results container
+    let externalContainer = document.querySelector('.external-search-results');
+    
+    if (!externalContainer) {
+        externalContainer = document.createElement('div');
+        externalContainer.className = 'external-search-results';
+        externalContainer.innerHTML = `
+            <div class="external-search-header">
+                <h4>🔍 Search External Resources</h4>
+                <p>Find more detailed information in our specialized repositories:</p>
+            </div>
+        `;
+        
+        const searchOutput = document.querySelector('.md-search__output');
+        if (searchOutput) {
+            searchOutput.appendChild(externalContainer);
+        }
+    }
+
+    // Clear existing suggestions
+    const existingSuggestions = externalContainer.querySelectorAll('.external-suggestion');
+    existingSuggestions.forEach(s => s.remove());
+
+    // Add suggestions for each repo based on query relevance
+    Object.entries(repos).forEach(([key, repo]) => {
+        const relevantTopics = repo.topics.filter(topic => 
+            topic.includes(query) || query.includes(topic)
+        );
+
+        if (relevantTopics.length > 0 || query.length > 3) {
+            const suggestion = document.createElement('div');
+            suggestion.className = 'external-suggestion';
+            suggestion.innerHTML = `
+                <div class="suggestion-content">
+                    <strong>${repo.name}</strong>
+                    <p>Search for "${query}" in ${repo.name.toLowerCase()}</p>
+                    ${relevantTopics.length > 0 ? `<small>Related: ${relevantTopics.join(', ')}</small>` : ''}
+                </div>
+                <div class="suggestion-buttons">
+                    <a href="${repo.searchUrl}${encodeURIComponent(query)}" 
+                       target="_blank" 
+                       class="suggestion-link docs-search"
+                       onclick="CodebaseInterface.trackEvent('external_search', 'search', '${key}:${query}')">
+                       Search Docs →
+                    </a>
+                    <a href="${repo.repoSearchUrl}${encodeURIComponent(query)}" 
+                       target="_blank" 
+                       class="suggestion-link repo-search"
+                       onclick="CodebaseInterface.trackEvent('repo_search', 'search', '${key}:${query}')">
+                       Search Repo →
+                    </a>
+                </div>
+            `;
+            
+            externalContainer.appendChild(suggestion);
+        }
+    });
+}
+
+/**
+ * Add external search options to the search interface
+ */
+function addExternalSearchOptions(repos) {
+    const searchForm = document.querySelector('.md-search__form');
+    if (!searchForm) return;
+
+    // Add CSS for external search styling
+    if (!document.querySelector('#external-search-styles')) {
+        const styles = document.createElement('style');
+        styles.id = 'external-search-styles';
+        styles.textContent = `
+            .external-search-results {
+                margin: 1rem 0;
+                padding: 1rem;
+                background: var(--md-code-bg-color);
+                border-radius: 8px;
+                border-left: 4px solid var(--ci-primary, #2563eb);
+            }
+            
+            .external-search-header h4 {
+                margin: 0 0 0.5rem 0;
+                color: var(--ci-primary, #2563eb);
+                font-size: 0.9rem;
+            }
+            
+            .external-search-header p {
+                margin: 0 0 1rem 0;
+                font-size: 0.8rem;
+                opacity: 0.8;
+            }
+            
+            .external-suggestion {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.75rem;
+                margin: 0.5rem 0;
+                background: var(--md-default-bg-color);
+                border-radius: 6px;
+                border: 1px solid var(--md-default-fg-color--lightest);
+                transition: all 0.2s ease;
+            }
+            
+            .external-suggestion:hover {
+                transform: translateX(4px);
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            }
+            
+            .suggestion-content {
+                flex: 1;
+            }
+            
+            .suggestion-content strong {
+                color: var(--ci-primary, #2563eb);
+                font-size: 0.85rem;
+            }
+            
+            .suggestion-content p {
+                margin: 0.25rem 0;
+                font-size: 0.8rem;
+            }
+            
+            .suggestion-content small {
+                color: var(--md-default-fg-color--light);
+                font-size: 0.7rem;
+            }
+            
+            .suggestion-buttons {
+                display: flex;
+                gap: 0.5rem;
+                flex-direction: column;
+            }
+            
+            @media (min-width: 768px) {
+                .suggestion-buttons {
+                    flex-direction: row;
+                }
+            }
+            
+            .suggestion-link {
+                background: var(--ci-primary, #2563eb);
+                color: white !important;
+                padding: 0.4rem 0.8rem;
+                border-radius: 4px;
+                text-decoration: none;
+                font-size: 0.75rem;
+                font-weight: 500;
+                transition: background 0.2s ease;
+                text-align: center;
+                min-width: 100px;
+            }
+            
+            .suggestion-link:hover {
+                background: var(--ci-accent, #0ea5e9);
+                text-decoration: none;
+            }
+            
+            .suggestion-link.repo-search {
+                background: var(--md-default-fg-color--light);
+                color: var(--md-default-bg-color) !important;
+            }
+            
+            .suggestion-link.repo-search:hover {
+                background: var(--md-default-fg-color);
+            }
+        `;
+        document.head.appendChild(styles);
+    }
 }
 
 /**

@@ -1,10 +1,12 @@
 ---
 title: Codebase Interface - Promoting Ease of Use Across Languages and Frameworks
-description: A comprehensive set of principles that promote ease of use of codebases across languages, frameworks, and audiences including contributors, users, operators, AI agents, and build agents.
-keywords: codebase interface, documentation standards, software development, best practices, developer experience, technical documentation, API documentation, CI/CD, DevOps
+description: A comprehensive set of principles and tools that promote ease of use of codebases across languages, frameworks, and audiences. Explore documentation, CLI tools, templates, and implementation guides for contributors, consumers, operators, and AI agents.
+keywords: codebase interface, documentation standards, CLI tools, templates, automation, contributors, consumers, operators, AI agents, build agents, implementation guides, best practices, project structure, documentation generation, compliance validation, cross-platform, multi-language
 hide:
   - navigation
   - toc
+search:
+  boost: 2.0
 ---
 
 <style>
@@ -68,17 +70,25 @@ A **comprehensive set of principles** that promote ease of use of codebases acro
 
 === "📖 Documentation"
     
-    **Explore comprehensive guides and principles**
+    **Comprehensive guides, principles, and implementation patterns**
     
-    Learn about the core principles, implementation patterns, and best practices that make codebases more accessible to all audiences.
+    Explore detailed documentation covering core principles, audience-specific interfaces, implementation patterns, and best practices.
     
-    [View Documentation →](about.md){ .md-button }
+    **Available Resources:**
+    - 🏗️ Architecture & Design Patterns
+    - 📋 Interface Specifications 
+    - 🎯 Audience-Specific Guides
+    - 📝 Template Library
+    - 🔍 Compliance Checklists
+    
+    [View Full Documentation →](https://codebase-interface.github.io/docs){ .md-button }
+    [Browse Templates →](https://codebase-interface.github.io/docs/templates){ .md-button }
 
 === "💻 CLI Tools"
     
-    **Command-line tools for implementing standards**
+    **Command-line automation for implementing standards**
     
-    Use our CLI tools to automatically generate and validate codebase interface compliance in your projects.
+    Professional-grade CLI tools to automatically generate, validate, and maintain codebase interface compliance across your projects.
     
     ```bash
     # Install the CLI
@@ -89,22 +99,46 @@ A **comprehensive set of principles** that promote ease of use of codebases acro
     
     # Validate compliance
     codebase-interface validate
+    
+    # Generate documentation
+    codebase-interface generate --template=standard
     ```
     
-    [View CLI Documentation →](https://github.com/codebase-interface/cli){ .md-button }
+    **Key Features:**
+    - 🚀 Project initialization templates
+    - ✅ Automated compliance validation  
+    - 📄 Documentation generation
+    - 🔧 Custom template support
+    
+    [CLI Documentation →](https://codebase-interface.github.io/cli){ .md-button }
+    [Installation Guide →](https://codebase-interface.github.io/cli/installation){ .md-button }
 
 === "🚀 Quick Setup"
     
-    **Get started in minutes**
+    **Get started in minutes with guided setup**
     
-    Add codebase interface standards to any existing project with our quick setup guide.
+    Choose your preferred approach to implement codebase interface standards in your existing or new projects.
     
-    1. **Choose your approach**: CLI automation or manual setup
-    2. **Generate documentation**: Create audience-specific documentation files
-    3. **Configure tooling**: Set up automated validation and quality checks
-    4. **Validate compliance**: Ensure your codebase meets interface standards
+    **Setup Options:**
     
-    [Start Setup Guide →](https://github.com/codebase-interface/docs){ .md-button }
+    1. **🤖 Automated CLI Setup**
+       - Install CLI: `npm install -g @codebase-interface/cli`
+       - Run: `codebase-interface init`
+       - Follow interactive prompts
+    
+    2. **📋 Manual Implementation**
+       - Review documentation templates
+       - Copy interface files to your project
+       - Customize for your specific needs
+    
+    3. **🎯 Framework-Specific Guides**
+       - Node.js/TypeScript projects
+       - Python applications
+       - Docker containerized apps
+       - Multi-language repositories
+    
+    [Start Setup Guide →](https://codebase-interface.github.io/docs/getting-started){ .md-button }
+    [Browse Framework Guides →](https://codebase-interface.github.io/docs/frameworks){ .md-button }
 
 </div>
 
@@ -133,6 +167,55 @@ my-project/
 - 🚀 **Fast Onboarding** - New team members know exactly where to look
 - 🤖 **AI-Friendly** - Automated tools understand your project structure
 - 🔄 **Universal** - Works with any programming language or framework
+
+</div>
+
+---
+
+## 🔍 External Resources & Documentation
+
+<div class="resources-grid" markdown>
+
+### 📚 Complete Documentation Hub
+**[codebase-interface.github.io/docs](https://codebase-interface.github.io/docs)**
+
+Comprehensive documentation covering all aspects of codebase interface implementation:
+
+- **🏗️ Architecture Guides** - Design patterns and structural principles
+- **👥 Audience Interfaces** - Detailed specs for contributors, consumers, operators, AI agents
+- **📋 Implementation Templates** - Ready-to-use files for different project types
+- **🎯 Framework-Specific Guides** - Tailored instructions for popular tech stacks
+- **✅ Compliance Checklists** - Validation criteria and quality standards
+- **📖 Best Practices** - Community-driven recommendations and examples
+
+[Browse Documentation →](https://codebase-interface.github.io/docs){ .md-button .md-button--primary }
+[View Templates →](https://codebase-interface.github.io/docs/templates){ .md-button }
+
+### 🛠️ CLI Tools & Automation
+**[codebase-interface.github.io/cli](https://codebase-interface.github.io/cli)**
+
+Powerful command-line interface for automating codebase interface implementation:
+
+- **⚡ Project Initialization** - Set up interface files in seconds
+- **🔍 Compliance Validation** - Automated checks against interface standards  
+- **📄 Documentation Generation** - Create audience-specific docs from templates
+- **🎨 Custom Templates** - Define and share your own interface patterns
+- **🔄 Continuous Integration** - Integrate validation into your CI/CD pipeline
+- **📊 Reporting & Analytics** - Track compliance across multiple projects
+
+[CLI Documentation →](https://codebase-interface.github.io/cli){ .md-button .md-button--primary }
+[Installation Guide →](https://codebase-interface.github.io/cli/installation){ .md-button }
+
+### 🔗 Quick Access Links
+
+| Resource Type | Description | Link |
+|---------------|-------------|------|
+| 🏠 **Main Site** | Landing page and overview | [codebase-interface.github.io](https://codebase-interface.github.io) |
+| 📚 **Documentation** | Complete guides and specifications | [docs site](https://codebase-interface.github.io/docs) |
+| 🛠️ **CLI Tools** | Command-line automation | [cli documentation](https://codebase-interface.github.io/cli) |
+| 🎯 **Templates** | Ready-to-use interface files | [templates section](https://codebase-interface.github.io/docs/templates) |
+| 🚀 **Getting Started** | Quick setup guides | [getting started guide](https://codebase-interface.github.io/docs/getting-started) |
+| 💬 **Community** | Discussions and support | [GitHub Discussions](https://github.com/codebase-interface/docs/discussions) |
 
 </div>
 

@@ -122,6 +122,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-11-15 14:32:08)_
 - Update changelog [skip ci] _(2025-11-15 14:23:59)_
 - Update changelog [skip ci] _(2025-11-15 14:21:24)_
 - Update changelog [skip ci] _(2025-11-15 14:17:54)_
@@ -190,6 +191,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### ⚙️ Miscellaneous Tasks
 
+- Add .nojekyll file for GitHub Pages deployment _(2025-11-15 14:37:57)_
 - Enhance deployment workflow by adding Node.js setup and improving linting process _(2025-11-15 14:31:57)_
 - Remove npm cache from Node.js setup in deployment workflow _(2025-11-15 14:23:50)_
 - Streamline Python dependency management and plugin verification in workflows _(2025-11-15 14:21:15)_

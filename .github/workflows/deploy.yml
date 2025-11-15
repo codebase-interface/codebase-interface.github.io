@@ -50,20 +50,10 @@ jobs:
       - name: Install Python dependencies via Task
         run: task setup
 
-      - name: Verify and reinstall plugins
-        run: |
-          pip install --force-reinstall mkdocs-minify-plugin
-          pip install --force-reinstall mkdocs-mermaid2-plugin
-          pip install --force-reinstall mkdocs-git-revision-date-localized-plugin
-          python -c "import mkdocs_minify_plugin; print('✅ mkdocs-minify-plugin installed')"
-          echo "✅ All MkDocs plugins verified and reinstalled"
-
-      - name: Verify plugin installation
+      - name: Verify critical plugins
         run: |
           python -c "import mkdocs_minify_plugin; print('✅ mkdocs-minify-plugin installed')"
-          python -c "import mermaid; print('✅ mkdocs-mermaid2-plugin installed')"
-          python -c "import mkdocs_git_revision_date_localized_plugin; print('✅ git-revision-date-localized-plugin installed')"
-          echo "All MkDocs plugins verified"
+          echo "✅ All MkDocs plugins verified"
 
       - name: Setup Node.js (for Lighthouse)
         uses: actions/setup-node@v4

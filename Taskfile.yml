@@ -17,13 +17,8 @@ tasks:
     desc: Set up the development environment
     cmds:
       - pip install --upgrade pip
-      - pip install mkdocs-material>=9.0.0
-      - pip install mkdocs-git-revision-date-localized-plugin
-      - pip install mkdocs-multirepo-plugin
-      - pip install mkdocs-mermaid2-plugin
-      - pip install mkdocs-minify-plugin
-      - pip install pymdown-extensions
-      - echo "✅ Python dependencies installed"
+      - pip install -r requirements.txt
+      - echo "✅ Python dependencies installed from requirements.txt"
       - echo "Note - For linting install markdownlint-cli globally"
       - python -c "import mkdocs_minify_plugin; print('✅ Minify plugin verified')" || echo "⚠️ Minify plugin not found"
       - echo "Setup complete!"

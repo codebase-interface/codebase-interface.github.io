@@ -1,0 +1,54 @@
+# Markdown linting configuration for the landing page
+extends: default
+
+rules:
+  # Line length - allow longer lines for landing page content
+  line-length:
+    line_length: 120
+    code_blocks: false
+    tables: false
+    headings: false
+
+  # Allow HTML in markdown for enhanced styling
+  no-inline-html: false
+  
+  # Allow duplicate headings for sections
+  no-duplicate-heading: false
+  
+  # First line heading - disabled for front matter
+  first-line-heading: false
+  
+  # Allow emphasis markers for styled content
+  no-emphasis-as-heading: false
+  
+  # Allow trailing punctuation in headers
+  no-trailing-punctuation: false
+  
+  # Blanks around lists - enforce proper spacing
+  blanks-around-lists: true
+  
+  # Blanks around fences
+  blanks-around-fences: true
+  
+  # No bare URLs
+  no-bare-urls: true
+  
+  # Proper link formatting
+  no-space-in-links: true
+  
+  # Code block style
+  fenced-code-language: false
+  
+  # List marker style
+  ul-style:
+    style: dash
+    
+  # Ordered list markers
+  ol-prefix:
+    style: ordered
+    
+  # No trailing spaces
+  no-trailing-spaces: true
+  
+  # Single trailing newline
+  single-trailing-newline: true

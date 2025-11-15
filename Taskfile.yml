@@ -3,46 +3,74 @@
 version: '3'
 
 vars:
-  GREETING: Hello, World!
+  SITE_NAME: Codebase Interface
+  SITE_URL: https://codebase-interface.github.io
 
 tasks:
   default:
-    desc: Print a greeting message
+    desc: Show available tasks
     cmds:
-      - echo "{{.GREETING}}"
+      - task --list
     silent: true
 
-  setup: 
+  setup:
     desc: Set up the development environment
     cmds:
-      - pip install mkdocs-material
+      - pip install --upgrade pip
+      - pip install mkdocs-material>=9.0.0
       - pip install mkdocs-git-revision-date-localized-plugin
-      - pip install pymdown-extensions
+      - pip install mkdocs-multirepo-plugin
       - pip install mkdocs-mermaid2-plugin
-      - echo "Setup complete! Changelog is automatically generated via GitHub Actions."
-    silent: true
+      - pip install mkdocs-minify-plugin
+      - pip install pymdown-extensions
+      - echo "Setup complete!"
+
+  install:
+    desc: Install dependencies (alias for setup)
+    cmds:
+      - task: setup
+
+  serve:
+    desc: Serve the landing page locally with live reload
+    cmds:
+      - echo "Starting local development server..."
+      - mkdocs serve --livereload --dev-addr 127.0.0.1:8000
 
   build:
-    desc: Build the MkDocs site
+    desc: Build the optimized landing page
     cmds:
-      - mkdocs build --strict
+      - echo "Building landing page..."
+      - mkdocs build --strict --verbose
 
-  run:
-    desc: Run codebaseinterface locally
+  deploy:
+    desc: Deploy to GitHub Pages
     cmds:
-      - mkdocs serve --livereload
+      - echo "Deploying to GitHub Pages..."
+      - mkdocs gh-deploy --force --verbose
 
-  changelog:
-    desc: Generate changelog using git-cliff
+  clean:
+    desc: Clean build artifacts
     cmds:
-      - git cliff --output CHANGELOG.md
+      - rm -rf site/
+      - echo "Build artifacts cleaned"
 
-  changelog:unreleased:
-    desc: Generate changelog for unreleased changes
+  lint:
+    desc: Lint markdown files
     cmds:
-      - git cliff --unreleased --output CHANGELOG.md
+      - markdownlint --config .markdownlint.yml *.md
 
-  changelog:update:
-    desc: Update changelog with new commits since last tag
+  validate:
+    desc: Validate the complete site
     cmds:
-      - git cliff --latest --output CHANGELOG.md --prepend
+      - task: lint
+      - task: build
+
+  stats:
+    desc: Show site statistics
+    cmds:
+      - echo "Markdown files:"
+      - find . -name '*.md' | wc -l
+      - echo "CSS files:"
+      - find assets -name '*.css' 2>/dev/null | wc -l || echo "0"
+      - echo "JS files:"
+      - find assets -name '*.js' 2>/dev/null | wc -l || echo "0"

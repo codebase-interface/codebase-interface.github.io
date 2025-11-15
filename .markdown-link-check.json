@@ -1,0 +1,21 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^https://github\\.com/codebase-interface/docs"
+    },
+    {
+      "pattern": "^https://github\\.com/codebase-interface/cli"
+    },
+    {
+      "pattern": "^https://twitter\\.com/codebaseinterface"
+    },
+    {
+      "pattern": "^https://linkedin\\.com/company/codebase-interface"
+    }
+  ],
+  "timeout": "20s",
+  "retryOn429": true,
+  "retryCount": 3,
+  "fallbackRetryDelay": "30s",
+  "aliveStatusCodes": [200, 206, 999]
+}

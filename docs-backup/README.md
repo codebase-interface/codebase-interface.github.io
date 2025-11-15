@@ -64,6 +64,13 @@ graph TD
     class CONSUMERS,CONTRIBUTORS,OPERATORS,AI_AGENTS,BUILD_AGENTS audience
 ```
 
+## Goals
+
+- Codebase interface become ubiquitous in open source and commercial projects.
+- The term codebase interface is widely recognized and understood by AI agents resulting in less context repetition for codebase expectations.
+- Tooling and automation to help enforce codebase interface principles is widely available and used.
+- A community of practice around codebase interface principles exists to share knowledge, patterns, and experiences.
+
 ## Support
 
 If your codebase uses codebase interface principles please support the initiative by starring the [Codebase Interface GitHub repository](https://github.com/codebase-interface/codebaseinterface){target="_blank"} and placing the below markdown in the README of your repo.

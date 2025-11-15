@@ -1,0 +1,137 @@
+# GitHub Actions workflow for deploying the Codebase Interface landing page
+
+name: Deploy Landing Page
+
+on:
+  push:
+    branches: 
+      - main
+  schedule:
+    # Daily sync at 6 AM UTC to pull updates from external repositories
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      force_rebuild:
+        description: 'Force rebuild of all content'
+        required: false
+        default: 'false'
+
+# Allow only one deployment at a time
+concurrency:
+  group: "deploy"
+  cancel-in-progress: false
+
+# Sets permissions for GitHub Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+
+      - name: Setup Task
+        uses: arduino/setup-task@v1
+        with:
+          version: 3.x
+
+      - name: Install dependencies
+        run: task setup
+
+      - name: Setup Node.js (for optimization tools)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install optimization tools
+        run: |
+          npm install -g htmlmin cleancss-cli
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+
+      - name: Validate configuration
+        run: |
+          task lint
+          echo "✅ Configuration validation passed"
+
+      - name: Build landing page
+        run: |
+          task build:production
+          echo "✅ Landing page built successfully"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./site
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
+  lighthouse:
+    needs: deploy
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli
+
+      - name: Run Lighthouse CI
+        run: |
+          lhci autorun --upload.target=temporary-public-storage
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Comment PR with Lighthouse results
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '🔍 Lighthouse audit completed! Check the results in the workflow logs.'
+            });
+
+  notify:
+    needs: [deploy, lighthouse]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Notify deployment status
+        run: |
+          if [ "${{ needs.deploy.result }}" == "success" ]; then
+            echo "🚀 Landing page successfully deployed to https://codebase-interface.github.io"
+          else
+            echo "❌ Deployment failed"
+            exit 1
+          fi

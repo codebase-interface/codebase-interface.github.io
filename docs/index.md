@@ -110,6 +110,34 @@ A **comprehensive set of principles** that promote ease of use of codebases acro
 
 ---
 
+## 📁 Interface Example
+
+<div class="interface-example" markdown>
+
+Here's what a codebase interface looks like in practice:
+
+```
+my-project/
+├── 📖 README.md              # User interface - how to use the project
+├── 🤝 CONTRIBUTING.md        # Contributor interface - how to contribute
+├── 🖥️ RUNBOOK.md            # Operator interface - how to deploy/operate
+├── 🤖 AGENTS.md              # AI Agent interface - how agents should interact
+├── 📝 TODO.md                # Outstanding tasks and roadmap
+├── 📋 Taskfile.yml           # Unified task automation interface
+├── ⚙️ .editorconfig          # Code formatting standards
+└── 📏 .gitattributes         # Git handling rules
+```
+
+**Key Benefits:**
+- ✅ **Predictable** - Same structure across all projects
+- 🚀 **Fast Onboarding** - New team members know exactly where to look
+- 🤖 **AI-Friendly** - Automated tools understand your project structure
+- 🔄 **Universal** - Works with any programming language or framework
+
+</div>
+
+---
+
 ## ⭐ Key Principles
 
 <div class="principles-grid" markdown>

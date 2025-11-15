@@ -23,6 +23,8 @@ tasks:
       - pip install mkdocs-mermaid2-plugin
       - pip install mkdocs-minify-plugin
       - pip install pymdown-extensions
+      - echo "✅ Python dependencies installed"
+      - echo "Note - For linting install markdownlint-cli globally"
       - echo "Setup complete!"
 
   install:
@@ -42,6 +44,13 @@ tasks:
       - echo "Building landing page..."
       - mkdocs build --strict --verbose
 
+  build-production:
+    desc: Build optimized production version
+    cmds:
+      - echo "Building production landing page..."
+      - mkdocs build --strict --clean --verbose
+      - echo "Production build complete!"
+
   deploy:
     desc: Deploy to GitHub Pages
     cmds:
@@ -57,7 +66,7 @@ tasks:
   lint:
     desc: Lint markdown files
     cmds:
-      - markdownlint --config .markdownlint.yml *.md
+      - sh -c 'if command -v markdownlint > /dev/null 2>&1; then markdownlint --config .markdownlint.yml *.md docs/*.md && echo "✅ Markdown linting completed"; else echo "⚠️  markdownlint not found. Install with npm install -g markdownlint-cli" && echo "Skipping markdown linting..."; fi'
 
   validate:
     desc: Validate the complete site
@@ -71,6 +80,6 @@ tasks:
       - echo "Markdown files:"
       - find . -name '*.md' | wc -l
       - echo "CSS files:"
-      - find assets -name '*.css' 2>/dev/null | wc -l || echo "0"
+      - find docs/assets -name '*.css' 2>/dev/null | wc -l || echo "0"
       - echo "JS files:"
-      - find assets -name '*.js' 2>/dev/null | wc -l || echo "0"
+      - find docs/assets -name '*.js' 2>/dev/null | wc -l || echo "0"

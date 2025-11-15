@@ -39,7 +39,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.12'
           cache: 'pip'
 
       - name: Setup Task
@@ -47,30 +47,29 @@ jobs:
         with:
           version: 3.x
 
-      - name: Install dependencies
+      - name: Install Python dependencies via Task
         run: task setup
 
-      - name: Setup Node.js (for optimization tools)
+      - name: Setup Node.js (for Lighthouse)
         uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
 
-      - name: Install optimization tools
+      - name: Install markdown linting tools
         run: |
-          npm install -g htmlmin cleancss-cli
-          sudo apt-get update
-          sudo apt-get install -y python3-pip
+          npm install -g markdownlint-cli
+          echo "✅ Linting tools installed"
 
       - name: Validate configuration
         run: |
-          task lint
-          echo "✅ Configuration validation passed"
+          task validate
+          echo "✅ Configuration and linting validation passed"
 
-      - name: Build landing page
+      - name: Build production landing page
         run: |
-          task build:production
-          echo "✅ Landing page built successfully"
+          task build-production
+          echo "✅ Production landing page built successfully"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2

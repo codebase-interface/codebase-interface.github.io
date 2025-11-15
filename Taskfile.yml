@@ -47,6 +47,8 @@ tasks:
     cmds:
       - echo "Building production landing page..."
       - mkdocs build --strict --clean --verbose
+      - touch site/.nojekyll
+      - echo "✅ Added .nojekyll file for GitHub Pages"
       - echo "Production build complete!"
 
   deploy:

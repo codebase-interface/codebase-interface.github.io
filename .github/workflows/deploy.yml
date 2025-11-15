@@ -71,6 +71,11 @@ jobs:
           task build-production
           echo "✅ Production landing page built successfully"
 
+      - name: Add .nojekyll file
+        run: |
+          touch ./site/.nojekyll
+          echo "✅ Added .nojekyll file for GitHub Pages"
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

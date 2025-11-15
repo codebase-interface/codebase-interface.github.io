@@ -7,8 +7,6 @@ edit_uri: edit/main/
 
 theme:
   name: material
-  logo: assets/images/logo.png
-  favicon: assets/images/favicon.ico
   features:
     - navigation.tabs
     - navigation.sections
@@ -42,6 +40,12 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/extra.js
 
 plugins:
   - search:
@@ -105,13 +109,6 @@ extra:
     provider: mike
     default: latest
   generator: false
-
-extra_css:
-  - assets/stylesheets/extra.css
-
-extra_javascript:
-  - assets/javascripts/extra.js
-  - assets/javascripts/search.js
 
 copyright: |
   &copy; 2023-2025 <a href="https://github.com/codebase-interface" target="_blank" rel="noopener">Codebase Interface Contributors</a><br>

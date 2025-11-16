@@ -24,121 +24,10 @@ search:
 A **comprehensive set of principles** that promote ease of use of codebases across languages, frameworks, and multiple audiences.
 
 <div class="hero-buttons" markdown>
-[Get Started →](about.md){ .md-button .md-button--primary }
+[Comprehensive Docs →](https://codebaseinterface.org/docs){ .md-button .md-button--primary }
+[CLI Automation →](https://codebaseinterface.org/cli){ .md-button .md-button--primary }
 [View on GitHub](https://github.com/codebase-interface){ .md-button }
 </div>
-
-</div>
-
----
-
-## 👥 Built for Multiple Audiences
-
-<div class="audience-grid" markdown>
-
-!!! tip "**Contributors**"
-    
-    💻 **Developers who modify and extend**
-    
-    Clear contribution guidelines, development setup, and coding standards through standardized documentation files.
-
-!!! info "**Consumers** "
-    
-    👥 **End consumers who consume functionality**
-    
-    Comprehensive user guides, API documentation, and getting started materials tailored for different skill levels.
-
-!!! success "**Operators**"
-    
-    🖥️ **DevOps and platform teams**
-    
-    Operational runbooks, deployment guides, monitoring setup, and troubleshooting documentation for production environments.
-
-!!! warning "**AI Agents**"
-    
-    🤖 **Automated systems and tools**
-    
-    Machine-readable documentation, structured data formats, and clear interfaces for automated code analysis and generation.
-
-</div>
-
----
-
-## ⚡ Quick Start
-
-<div class="quickstart-tabs" markdown>
-
-=== "📖 Documentation"
-    
-    **Comprehensive guides, principles, and implementation patterns**
-    
-    Explore detailed documentation covering core principles, audience-specific interfaces, implementation patterns, and best practices.
-    
-    **Available Resources:**
-    - 🏗️ Architecture & Design Patterns
-    - 📋 Interface Specifications 
-    - 🎯 Audience-Specific Guides
-    - 📝 Template Library
-    - 🔍 Compliance Checklists
-    
-    [View Full Documentation →](https://codebaseinterface.org/docs){ .md-button }
-    [Browse Templates →](https://codebaseinterface.org/docs/templates){ .md-button }
-
-=== "💻 CLI Tools"
-    
-    **Command-line automation for implementing standards**
-    
-    Professional-grade CLI tools to automatically generate, validate, and maintain codebase interface compliance across your projects.
-    
-    ```bash
-    # Install the CLI
-    npm install -g @codebase-interface/cli
-    
-    # Initialize in your project
-    codebase-interface init
-    
-    # Validate compliance
-    codebase-interface validate
-    
-    # Generate documentation
-    codebase-interface generate --template=standard
-    ```
-    
-    **Key Features:**
-    - 🚀 Project initialization templates
-    - ✅ Automated compliance validation  
-    - 📄 Documentation generation
-    - 🔧 Custom template support
-    
-    [CLI Documentation →](https://codebaseinterface.org/cli){ .md-button }
-    [Installation Guide →](https://codebaseinterface.org/cli/installation){ .md-button }
-
-=== "🚀 Quick Setup"
-    
-    **Get started in minutes with guided setup**
-    
-    Choose your preferred approach to implement codebase interface standards in your existing or new projects.
-    
-    **Setup Options:**
-    
-    1. **🤖 Automated CLI Setup**
-       - Install CLI: `npm install -g @codebase-interface/cli`
-       - Run: `codebase-interface init`
-       - Follow interactive prompts
-    
-    2. **📋 Manual Implementation**
-       - Review documentation templates
-       - Copy interface files to your project
-       - Customize for your specific needs
-    
-    3. **🎯 Framework-Specific Guides**
-       - Node.js/TypeScript projects
-       - Python applications
-       - Docker containerized apps
-       - Multi-language repositories
-    
-    [Start Setup Guide →](https://codebaseinterface.org/docs/getting-started){ .md-button }
-    [Browse Framework Guides →](https://codebaseinterface.org/docs/frameworks){ .md-button }
 
 </div>
 
@@ -154,7 +43,7 @@ Here's what a codebase interface looks like in practice:
 my-project/
 ├── 📖 README.md              # User interface - how to use the project
 ├── 🤝 CONTRIBUTING.md        # Contributor interface - how to contribute
-├── 🖥️ RUNBOOK.md            # Operator interface - how to deploy/operate
+├── 🖥️ RUNBOOK.md             # Operator interface - how to deploy/operate
 ├── 🤖 AGENTS.md              # AI Agent interface - how agents should interact
 ├── 📝 TODO.md                # Outstanding tasks and roadmap
 ├── 📋 Taskfile.yml           # Unified task automation interface
@@ -163,59 +52,11 @@ my-project/
 ```
 
 **Key Benefits:**
+
 - ✅ **Predictable** - Same structure across all projects
 - 🚀 **Fast Onboarding** - New team members know exactly where to look
 - 🤖 **AI-Friendly** - Automated tools understand your project structure
 - 🔄 **Universal** - Works with any programming language or framework
-
-</div>
-
----
-
-## 🔍 External Resources & Documentation
-
-<div class="resources-grid" markdown>
-
-### 📚 Complete Documentation Hub
-**[codebaseinterface.org/docs](https://codebaseinterface.org/docs)**
-
-Comprehensive documentation covering all aspects of codebase interface implementation:
-
-- **🏗️ Architecture Guides** - Design patterns and structural principles
-- **👥 Audience Interfaces** - Detailed specs for contributors, consumers, operators, AI agents
-- **📋 Implementation Templates** - Ready-to-use files for different project types
-- **🎯 Framework-Specific Guides** - Tailored instructions for popular tech stacks
-- **✅ Compliance Checklists** - Validation criteria and quality standards
-- **📖 Best Practices** - Community-driven recommendations and examples
-
-[Browse Documentation →](https://codebaseinterface.org/docs){ .md-button .md-button--primary }
-[View Templates →](https://codebaseinterface.org/docs/templates){ .md-button }
-
-### 🛠️ CLI Tools & Automation
-**[codebaseinterface.org/cli](https://codebaseinterface.org/cli)**
-
-Powerful command-line interface for automating codebase interface implementation:
-
-- **⚡ Project Initialization** - Set up interface files in seconds
-- **🔍 Compliance Validation** - Automated checks against interface standards  
-- **📄 Documentation Generation** - Create audience-specific docs from templates
-- **🎨 Custom Templates** - Define and share your own interface patterns
-- **🔄 Continuous Integration** - Integrate validation into your CI/CD pipeline
-- **📊 Reporting & Analytics** - Track compliance across multiple projects
-
-[CLI Documentation →](https://codebaseinterface.org/cli){ .md-button .md-button--primary }
-[Installation Guide →](https://codebaseinterface.org/cli/installation){ .md-button }
-
-### 🔗 Quick Access Links
-
-| Resource Type | Description | Link |
-|---------------|-------------|------|
-| 🏠 **Main Site** | Landing page and overview | [codebaseinterface.org](https://codebaseinterface.org) |
-| 📚 **Documentation** | Complete guides and specifications | [docs site](https://codebaseinterface.org/docs) |
-| 🛠️ **CLI Tools** | Command-line automation | [cli documentation](https://codebaseinterface.org/cli) |
-| 🎯 **Templates** | Ready-to-use interface files | [templates section](https://codebaseinterface.org/docs/templates) |
-| 🚀 **Getting Started** | Quick setup guides | [getting started guide](https://codebaseinterface.org/docs/getting-started) |
-| 💬 **Community** | Discussions and support | [GitHub Discussions](https://github.com/codebase-interface/docs/discussions) |
 
 </div>
 
@@ -249,6 +90,44 @@ Designed with **AI agents and build systems** in mind, providing machine-readabl
 
 ---
 
+## 👥 Designed for Everyone Who Interacts with Your Codebase
+
+<div class="audience-intro" markdown>
+
+A well-structured codebase serves **diverse audiences** with distinct needs. Adherence to the Codebase Interface ensures each group has clear, dedicated documentation and interfaces tailored to their role.
+
+</div>
+
+<div class="audience-grid" markdown>
+
+!!! tip "**Contributors**"
+    
+    💻 **Developers who modify and extend**
+    
+    Clear contribution guidelines, development setup, and coding standards through standardized documentation files.
+
+!!! info "**Consumers** "
+    
+    👥 **End consumers who consume functionality**
+    
+    Comprehensive user guides, API documentation, and getting started materials tailored for different skill levels.
+
+!!! success "**Operators**"
+    
+    🖥️ **Anyone who runs a service in production**
+    
+    Operational runbooks, deployment guides, monitoring setup, and troubleshooting documentation for production environments.
+
+!!! warning "**AI Agents**"
+    
+    🤖 **Automated systems and tools**
+    
+    Machine-readable documentation, structured data formats, and clear interfaces for automated code analysis and generation.
+
+</div>
+
+---
+
 ## 📈 Benefits
 
 <div class="benefits-section" markdown>
@@ -273,50 +152,45 @@ Designed with **AI agents and build systems** in mind, providing machine-readabl
 
 ---
 
-## 🏠 Open Source & Community Driven
+## 🚀 Get Started Today
 
-<div class="community-section" markdown>
+<div class="cta-grid" markdown>
 
-The Codebase Interface initiative is **open source** and **community-driven**. We welcome contributions, feedback, and adoption across all types of projects.
+<div class="cta-card cta-card--primary" markdown>
 
-<div class="stats-grid" markdown>
+### 📚 Explore the Documentation
 
-<div class="stat-item" markdown>
-**🚀 New**  
-Initiative
-</div>
+Dive into the principles, audiences, interfaces and benefits of the codebase interface.
 
-<div class="stat-item" markdown>
-**👥 Growing**  
-Community
-</div>
-
-<div class="stat-item" markdown>
-**📚 Open**  
-Standards
-</div>
-
-<div class="stat-item" markdown>
-**🔗 Multi**  
-Language Support
-</div>
+[View Documentation →](https://codebaseinterface.org/docs){ .md-button .md-button--primary }
 
 </div>
 
-[Join the Community →](https://github.com/codebase-interface){ .md-button .md-button--primary }
-[Read Contributing Guide →](https://github.com/codebase-interface/docs){ .md-button }
+<div class="cta-card cta-card--primary" markdown>
+
+### ⚡ Try the CLI Tools
+
+Automate compliance validation and project setup with our command-line tools.
+
+[Get CLI Tools →](https://codebaseinterface.org/cli){ .md-button .md-button--primary }
+
+</div>
 
 </div>
 
 ---
 
-<div class="cta-section" markdown>
+## 💬 Join the Community
 
-## 🚀 Ready to Get Started?
+<div class="community-section" markdown>
 
-Transform your codebase into a more accessible, maintainable, and automation-friendly project.
+Help shape the future of codebase interfaces. Share your experiences, suggest improvements, and collaborate with other like minded developers.
 
-[Explore Documentation 📖](https://github.com/codebase-interface/docs){ .md-button .md-button--primary .md-button--stretch }
-[Download CLI Tools 💻](https://github.com/codebase-interface/cli){ .md-button .md-button--stretch }
+<div class="community-buttons" markdown>
+
+[GitHub Organization](https://github.com/codebase-interface){ .md-button }
+[Discussions Forum](https://github.com/orgs/codebase-interface/discussions){ .md-button }
+
+</div>
 
 </div>

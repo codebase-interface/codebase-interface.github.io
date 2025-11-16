@@ -23,7 +23,7 @@ We've all been there. You clone a repository, eager to contribute or deploy, and
 - *"What does this thing actually do?"*
 - *"How do I even run this locally?"*
 - *"Where's the deployment guide?"*
-- *"Why are there three different README files?"*
+- *"Ok the site is down and this thing has no monitoring or debugging instructions???"*
 
 The Codebase Interface was born from this frustration. After encountering the same problems across countless projects—**inconsistent docs**, **confusing onboarding**, **AI tools that can't parse your codebase**, and **knowledge trapped in someone's head**—we realized the industry needed a better way.
 

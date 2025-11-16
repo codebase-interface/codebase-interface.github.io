@@ -12,19 +12,15 @@
   --ci-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* Hero Section Styling */
+/* Hero Section Styling - Mobile Optimized */
 .hero-section {
   text-align: center;
-  padding: 3rem 0;
-  background: var(--ci-gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
 }
 
 .hero-section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   background: var(--ci-gradient);
@@ -34,11 +30,16 @@
 }
 
 .hero-buttons {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.hero-buttons .md-button {
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
 }
 
 /* Interface Example Styling */
@@ -274,23 +275,32 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 1rem 0;
+    margin-bottom: 0.5rem;
+  }
+  
   .hero-section h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
   }
   
   .hero-buttons {
     flex-direction: column;
-    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
   }
   
   .hero-buttons .md-button {
     width: 100%;
     max-width: 300px;
+    margin: 0 auto;
   }
   
   .audience-grid,
   .principles-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
   
   .stats-grid {
@@ -298,7 +308,34 @@
   }
   
   .cta-section {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .interface-example {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .principle-card {
+    padding: 1.25rem;
+  }
+}
+
+/* Compact spacing for mobile */
+@media (max-width: 768px) {
+  .md-typeset h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .md-typeset h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .md-typeset hr {
+    margin: 1rem 0;
   }
 }
 

@@ -1,7 +1,7 @@
 ---
 title: Codebase Interface - Promoting Ease of Use Across Languages and Frameworks
 description: A comprehensive set of principles and tools that promote ease of use of codebases across languages, frameworks, and audiences. Explore documentation, CLI tools, templates, and implementation guides for contributors, consumers, operators, and AI agents.
-keywords: codebase interface, documentation standards, CLI tools, templates, automation, contributors, consumers, operators, AI agents, build agents, implementation guides, best practices, project structure, documentation generation, compliance validation, cross-platform, multi-language
+keywords: codebase interface, documentation standards, README, CONTRIBUTING, RUNBOOK, AGENTS, CLI tools, templates, automation, contributors, consumers, operators, AI agents, build agents, implementation guides, best practices, project structure, documentation generation, compliance validation, cross-platform, multi-language
 hide:
   - navigation
   - toc
@@ -19,9 +19,9 @@ search:
 
 <div class="hero-section" markdown>
 
-## 🚀 Promoting Ease of Use of Codebases Across Languages and Frameworks
+## 🚀 Promoting Ease of Codebase Use for All Audiences
 
-A **comprehensive set of principles** that promote ease of use of codebases across languages, frameworks, and multiple audiences.
+A **comprehensive set of principles** that promote ease of use codebase use across platforms, languages and IDEs for multiple audiences.
 
 <div class="hero-buttons" markdown>
 [Comprehensive Docs →](https://codebaseinterface.org/docs){ .md-button .md-button--primary }
@@ -79,7 +79,7 @@ The principles apply across **programming languages and frameworks**, promoting 
 
 <div class="principle-card" markdown>
 ### 🔧 Tool Integration
-Leverage common tools like **Taskfile**, `.editorconfig`, and conventional commits for better developer experience and automated quality assurance.
+Leverage common tools like **Taskfile**, `.editorconfig`, and conventional commits for better developer experience and streamlined contributing methods.
 </div>
 
 <div class="principle-card" markdown>
@@ -117,7 +117,7 @@ A well-structured codebase serves **diverse audiences** with distinct needs. Adh
     
     🖥️ **Anyone who runs a service in production**
     
-    Operational runbooks, deployment guides, monitoring setup, and troubleshooting documentation for production environments.
+    Operational runbooks contain monitoring guides and troubleshooting documentation for production environments.
 
 !!! warning "**AI Agents**"
     

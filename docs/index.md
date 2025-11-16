@@ -21,7 +21,7 @@ search:
 
 ## 🚀 Promoting Ease of Codebase Use for All Audiences
 
-A **comprehensive set of principles** that promote ease of use codebase use across platforms, languages and IDEs for multiple audiences.
+A **comprehensive set of principles** that promote ease of codebase use across platforms, languages and IDEs for multiple audiences.
 
 <div class="hero-buttons" markdown>
 [Comprehensive Docs →](https://codebaseinterface.org/docs){ .md-button .md-button--primary }

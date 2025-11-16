@@ -41,14 +41,15 @@ Here's what a codebase interface looks like in practice:
 
 ```
 my-project/
-├── 📖 README.md              # User interface - how to use the project
-├── 🤝 CONTRIBUTING.md        # Contributor interface - how to contribute
-├── 🖥️ RUNBOOK.md             # Operator interface - how to deploy/operate
-├── 🤖 AGENTS.md              # AI Agent interface - how agents should interact
-├── 📝 TODO.md                # Outstanding tasks and roadmap
-├── 📋 Taskfile.yml           # Unified task automation interface
-├── ⚙️ .editorconfig          # Code formatting standards
-└── 📏 .gitattributes         # Git handling rules
+├── 📖 README.md                    # User interface - how to use the project
+├── 🤝 CONTRIBUTING.md              # Contributor interface - how to contribute
+├── 🖥️ RUNBOOK.md                   # Operator interface - how to deploy/operate
+├── 🤖 AGENTS.md                    # AI Agent interface - how agents should interact
+├── 📋 TODO.md                      # Outstanding tasks and roadmap
+├── 📝 PULL_REQUEST_TEMPLATE.md     # Pull request template
+├── ⚙️ Taskfile.yml                 # Unified task automation interface
+├── 🎨 .editorconfig                # Code formatting standards
+└── 📏 .gitattributes               # Git handling rules
 ```
 
 **Key Benefits:**

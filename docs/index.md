@@ -81,8 +81,8 @@ A **comprehensive set of principles** that promote ease of use of codebases acro
     - 📝 Template Library
     - 🔍 Compliance Checklists
     
-    [View Full Documentation →](https://codebase-interface.github.io/docs){ .md-button }
-    [Browse Templates →](https://codebase-interface.github.io/docs/templates){ .md-button }
+    [View Full Documentation →](https://codebaseinterface.org/docs){ .md-button }
+    [Browse Templates →](https://codebaseinterface.org/docs/templates){ .md-button }
 
 === "💻 CLI Tools"
     
@@ -110,8 +110,8 @@ A **comprehensive set of principles** that promote ease of use of codebases acro
     - 📄 Documentation generation
     - 🔧 Custom template support
     
-    [CLI Documentation →](https://codebase-interface.github.io/cli){ .md-button }
-    [Installation Guide →](https://codebase-interface.github.io/cli/installation){ .md-button }
+    [CLI Documentation →](https://codebaseinterface.org/cli){ .md-button }
+    [Installation Guide →](https://codebaseinterface.org/cli/installation){ .md-button }
 
 === "🚀 Quick Setup"
     
@@ -137,8 +137,8 @@ A **comprehensive set of principles** that promote ease of use of codebases acro
        - Docker containerized apps
        - Multi-language repositories
     
-    [Start Setup Guide →](https://codebase-interface.github.io/docs/getting-started){ .md-button }
-    [Browse Framework Guides →](https://codebase-interface.github.io/docs/frameworks){ .md-button }
+    [Start Setup Guide →](https://codebaseinterface.org/docs/getting-started){ .md-button }
+    [Browse Framework Guides →](https://codebaseinterface.org/docs/frameworks){ .md-button }
 
 </div>
 
@@ -177,7 +177,7 @@ my-project/
 <div class="resources-grid" markdown>
 
 ### 📚 Complete Documentation Hub
-**[codebase-interface.github.io/docs](https://codebase-interface.github.io/docs)**
+**[codebaseinterface.org/docs](https://codebaseinterface.org/docs)**
 
 Comprehensive documentation covering all aspects of codebase interface implementation:
 
@@ -188,11 +188,11 @@ Comprehensive documentation covering all aspects of codebase interface implement
 - **✅ Compliance Checklists** - Validation criteria and quality standards
 - **📖 Best Practices** - Community-driven recommendations and examples
 
-[Browse Documentation →](https://codebase-interface.github.io/docs){ .md-button .md-button--primary }
-[View Templates →](https://codebase-interface.github.io/docs/templates){ .md-button }
+[Browse Documentation →](https://codebaseinterface.org/docs){ .md-button .md-button--primary }
+[View Templates →](https://codebaseinterface.org/docs/templates){ .md-button }
 
 ### 🛠️ CLI Tools & Automation
-**[codebase-interface.github.io/cli](https://codebase-interface.github.io/cli)**
+**[codebaseinterface.org/cli](https://codebaseinterface.org/cli)**
 
 Powerful command-line interface for automating codebase interface implementation:
 
@@ -203,18 +203,18 @@ Powerful command-line interface for automating codebase interface implementation
 - **🔄 Continuous Integration** - Integrate validation into your CI/CD pipeline
 - **📊 Reporting & Analytics** - Track compliance across multiple projects
 
-[CLI Documentation →](https://codebase-interface.github.io/cli){ .md-button .md-button--primary }
-[Installation Guide →](https://codebase-interface.github.io/cli/installation){ .md-button }
+[CLI Documentation →](https://codebaseinterface.org/cli){ .md-button .md-button--primary }
+[Installation Guide →](https://codebaseinterface.org/cli/installation){ .md-button }
 
 ### 🔗 Quick Access Links
 
 | Resource Type | Description | Link |
 |---------------|-------------|------|
-| 🏠 **Main Site** | Landing page and overview | [codebase-interface.github.io](https://codebase-interface.github.io) |
-| 📚 **Documentation** | Complete guides and specifications | [docs site](https://codebase-interface.github.io/docs) |
-| 🛠️ **CLI Tools** | Command-line automation | [cli documentation](https://codebase-interface.github.io/cli) |
-| 🎯 **Templates** | Ready-to-use interface files | [templates section](https://codebase-interface.github.io/docs/templates) |
-| 🚀 **Getting Started** | Quick setup guides | [getting started guide](https://codebase-interface.github.io/docs/getting-started) |
+| 🏠 **Main Site** | Landing page and overview | [codebaseinterface.org](https://codebaseinterface.org) |
+| 📚 **Documentation** | Complete guides and specifications | [docs site](https://codebaseinterface.org/docs) |
+| 🛠️ **CLI Tools** | Command-line automation | [cli documentation](https://codebaseinterface.org/cli) |
+| 🎯 **Templates** | Ready-to-use interface files | [templates section](https://codebaseinterface.org/docs/templates) |
+| 🚀 **Getting Started** | Quick setup guides | [getting started guide](https://codebaseinterface.org/docs/getting-started) |
 | 💬 **Community** | Discussions and support | [GitHub Discussions](https://github.com/codebase-interface/docs/discussions) |
 
 </div>

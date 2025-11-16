@@ -1,6 +1,6 @@
 site_name: Codebase Interface
 site_description: A comprehensive set of principles and tools that promote ease of use of codebases across languages, frameworks, and audiences - including contributors, consumers, operators, AI agents, and build agents. Explore documentation, CLI tools, and implementation guides.
-site_url: https://codebase-interface.github.io
+site_url: https://codebaseinterface.org
 repo_url: https://github.com/codebase-interface/codebase-interface.github.io
 repo_name: codebase-interface/codebase-interface.github.io
 edit_uri: edit/main/

@@ -38,6 +38,7 @@
 
 ### 🐛 Bug Fixes
 
+- Update links to point to the new domain and enhance documentation clarity _(2025-11-16 14:03:30)_
 - Remove redundant overview section from README _(2025-10-19 11:51:42)_
 - Add mkdocs-mermaid2-plugin installation to setup and deploy workflows _(2025-10-19 11:48:07)_
 - Update Taskfile and mkdocs configuration for improved setup and mermaid support _(2025-10-19 11:43:17)_
@@ -52,6 +53,7 @@
 
 ### 💼 Other
 
+- Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-16 14:03:30)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-15 14:49:04)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-15 14:47:20)_
 - Merge branch 'main' of https://github.com/codebase-interface/codebase-interface.github.io _(2025-11-15 14:31:57)_
@@ -125,6 +127,7 @@ Add step to copy CNAME file before deployment. _(2025-10-16 15:04:55)_
 
 ### 📚 Documentation
 
+- Update changelog [skip ci] _(2025-11-15 14:49:16)_
 - Update changelog [skip ci] _(2025-11-15 14:47:28)_
 - Update changelog [skip ci] _(2025-11-15 14:38:08)_
 - Update changelog [skip ci] _(2025-11-15 14:32:08)_

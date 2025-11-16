@@ -16,6 +16,10 @@ directs users to:
   [codebaseinterface.org/cli](https://codebaseinterface.org/cli)
 - **GitHub Organization**:
   [github.com/codebase-interface](https://github.com/codebase-interface)
+- **GitHub Discussions**:
+  [github.com/orgs/codebase-interface/discussions](https://github.com/orgs/codebase-interface/discussions)
+
+- Do not assume any other pages exist beyond those listed above.
 
 ### Target Audiences
 
